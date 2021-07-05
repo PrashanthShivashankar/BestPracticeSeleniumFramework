@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54964" started-at="2021-07-03T14:58:53Z" finished-at="2021-07-03T14:59:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54964" started-at="2021-07-03T14:58:53Z" finished-at="2021-07-03T14:59:48Z">
+      <class name="com.automation.testcases.UserRegistrationTestcase">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="setUpSuite" is-config="true" duration-ms="369" started-at="2021-07-03T20:28:53Z" finished-at="2021-07-03T20:28:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="setUp" is-config="true" duration-ms="10900" started-at="2021-07-03T20:28:53Z" finished-at="2021-07-03T20:29:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNewUsrerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="verifyNewUsrerRegistration" duration-ms="41744" started-at="2021-07-03T20:29:06Z" data-provider="readNewUserdata" finished-at="2021-07-03T20:29:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MNOABCD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pmno1234567890@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Summer@12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9.731534547E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Analyst]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Cognizant Technology Solutions]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2018.0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Jan]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Present]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Bangalore/Bengaluru, Karnataka]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[2 Months]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Java]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[IT Services & Consulting]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[IT Software - QA & Testing]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[QA/QC Exec.]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[Graduation/Diploma]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[B.Tech/B.E.]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Computers]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[MNO Collage]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[2017.0]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[F:\\Python-Programs\\SeleniumFrameworkNaukri\\TestData\\PRASHANTH_SELENIUM.pdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewUsrerRegistration -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="407" started-at="2021-07-03T20:29:47Z" finished-at="2021-07-03T20:29:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewUsrerRegistration status=SUCCESS method=UserRegistrationTestcase.verifyNewUsrerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDown" is-config="true" duration-ms="747" started-at="2021-07-03T20:29:48Z" finished-at="2021-07-03T20:29:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.testcases.UserRegistrationTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

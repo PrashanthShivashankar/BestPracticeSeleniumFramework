@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 22.835 s <<< FAILURE! - in TestSuite
+com.automation.testcases.NaukriLoginPageTest.verifyMyNaukriLink  Time elapsed: 0.477 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+Element <div class="mTxt"> is not clickable at point (1120,38) because another element <div class="head"> obscures it
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'LAPTOP-MOTMPJ0P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\prash\AppData\Local\Temp\rust_mozprofiledsWaUW, rotatable=false, moz:geckodriverVersion=0.26.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=WINDOWS, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=86.0.1, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=16204, browserName=firefox, moz:buildID=20210310152336, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 8cce6029-72e7-4b67-afd1-5958f52b5b0a
+	at com.automation.testcases.NaukriLoginPageTest.verifyMyNaukriLink(NaukriLoginPageTest.java:39)
+
+com.automation.testcases.NaukriProfilePageTest.setUp  Time elapsed: 3.715 s  <<< FAILURE!
+java.lang.NullPointerException
+
