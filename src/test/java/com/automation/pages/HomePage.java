@@ -116,7 +116,8 @@ public class HomePage {
 			{
 				skipAndContinueButton.click();
 			}
-		
+			clickOnMyNaukri();
+			clickOnSettings();
 			readMoreLink.click();
 			System.out.println("Element Selected ");
 			

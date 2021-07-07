@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.automation.pages.BaseClass;
 import com.automation.pages.HomePage;
 import com.automation.pages.LoginPage;
+import com.automation.utils.BrowserFactory;
 
 public class UserRegistrationTestcase extends BaseClass {
 	LoginPage loginpage;
@@ -27,6 +28,8 @@ public class UserRegistrationTestcase extends BaseClass {
 			String CurCity, String CurNoticePeriod, String Skills, String Industry, String FunctionalArea, String Role,
 			String HighestQualification, String Course, String Specialization, String Collage, String PassingYear,
 			String CVPath) {
+		try {
+			
 		loginpage = PageFactory.initElements(driver, LoginPage.class);
 		logger4j.info("verifyNewUsrerRegistration testcase started");
 		logger = report.createTest("Personal Page");
@@ -71,10 +74,17 @@ public class UserRegistrationTestcase extends BaseClass {
 		Assert.assertEquals(loginpage.clickOnProfileComleteSubmitButton(),
 			driver.getTitle());
 		logger.info("Testcase Ended and closing application");
+		} catch(Exception e) {
+			System.out.println("Runtime Exception Occured , And closing the Application"+ e.getMessage());
+			BrowserFactory.quitBrowser(driver);
+		}
+		
 	}
 	
 	@Test(priority=2, dependsOnMethods="verifyNewUsrerRegistration")
 	public void verifyAccountDeleteFunctionality() {
+		try {
+			
 		homepage = PageFactory.initElements(driver, HomePage.class);
 		logger4j.info("verifyAccountDeleteFunctionality testcase started");
 		logger = report.createTest("Delete Account Functionality");
@@ -94,6 +104,11 @@ public class UserRegistrationTestcase extends BaseClass {
 		logger4j.info("Password entered  clicked");
 		Assert.assertEquals(homepage.clickOnDeleteAccountAndLagOutButton(), "Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com");
 		logger.info("Delete Account Functionality TestCase Ended and closing application");
+		} catch(Exception e) {
+			System.out.println("Runtime Exception Occured , And closing the Application"+ e.getMessage());
+			BrowserFactory.quitBrowser(driver);
+		}
+		
 		
 	}
 
