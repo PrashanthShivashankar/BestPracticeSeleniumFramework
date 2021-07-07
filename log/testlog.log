@@ -1430,3 +1430,17 @@
 2021-07-07 15:47:41,068 - LogFileGeneration -INFO - Password entered  clicked
 2021-07-07 15:47:45,764 - LogFileGeneration -INFO - After Test method excecuted
 2021-07-07 15:47:45,765 - LogFileGeneration -INFO - Closing Application
+2021-07-07 16:03:30,519 - LogFileGeneration -INFO - Application Strated
+2021-07-07 16:03:31,253 - LogFileGeneration -INFO - verifyNewUsrerRegistration testcase started
+2021-07-07 16:03:40,836 - LogFileGeneration -INFO - After Test method excecuted
+2021-07-07 16:03:40,836 - LogFileGeneration -INFO - Closing Application
+2021-07-07 16:07:58,150 - LogFileGeneration -INFO - Application Strated
+2021-07-07 16:07:59,384 - LogFileGeneration -INFO - verifyNewUsrerRegistration testcase started
+2021-07-07 16:08:22,266 - LogFileGeneration -INFO - Experience Page
+2021-07-07 16:08:32,296 - LogFileGeneration -INFO - Education Page
+2021-07-07 16:08:45,280 - LogFileGeneration -INFO - After Test method excecuted
+2021-07-07 16:08:45,287 - LogFileGeneration -INFO - verifyAccountDeleteFunctionality testcase started
+2021-07-07 16:08:45,509 - LogFileGeneration -INFO - Mynaukri link clicked
+2021-07-07 16:08:47,428 - LogFileGeneration -INFO - Setting button link clicked
+2021-07-07 16:08:51,781 - LogFileGeneration -INFO - After Test method excecuted
+2021-07-07 16:08:51,782 - LogFileGeneration -INFO - Closing Application

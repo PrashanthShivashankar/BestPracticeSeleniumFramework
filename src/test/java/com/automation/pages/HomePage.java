@@ -41,6 +41,7 @@ public class HomePage {
 	private @FindBy(xpath="//input[@id='passwordField']") WebElement passwordFieldForAccountDeactivation;
 	private @FindBy(xpath="//button[@id='passowrdConfirmation']") WebElement deleteAccountLagoutButton;
 	private @FindBy(xpath="//button[text()='SKIP AND CONTINUE']") WebElement skipAndContinueButton;
+	private @FindBy(xpath="//a[@class='fl nLogo']//img") WebElement homepageButton;
 	
 	public void clickOnProfile() {
 		Helper.explicitWait(driver, profileLink);
@@ -174,5 +175,9 @@ public class HomePage {
 			e.printStackTrace();
 		}
 		return driver.getTitle();
+	}
+	
+	public void clickOnHomepageButton() {
+		homepageButton.click();
 	}
 }

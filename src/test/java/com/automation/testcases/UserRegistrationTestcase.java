@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.automation.exceptionHandeling.HandleException;
 import com.automation.pages.BaseClass;
 import com.automation.pages.HomePage;
 import com.automation.pages.LoginPage;
@@ -76,7 +77,8 @@ public class UserRegistrationTestcase extends BaseClass {
 		logger.info("Testcase Ended and closing application");
 		} catch(Exception e) {
 			System.out.println("Runtime Exception Occured , And closing the Application"+ e.getMessage());
-			BrowserFactory.quitBrowser(driver);
+			HandleException obj=new HandleException();
+			obj.afterGettingException();
 		}
 		
 	}
@@ -106,7 +108,8 @@ public class UserRegistrationTestcase extends BaseClass {
 		logger.info("Delete Account Functionality TestCase Ended and closing application");
 		} catch(Exception e) {
 			System.out.println("Runtime Exception Occured , And closing the Application"+ e.getMessage());
-			BrowserFactory.quitBrowser(driver);
+			
+			
 		}
 		
 		
