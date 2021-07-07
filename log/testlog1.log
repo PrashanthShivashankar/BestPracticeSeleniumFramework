@@ -1383,3 +1383,50 @@
 2021-07-07 14:56:17,718 [main] INFO LogFileGeneration - Password entered  clicked
 2021-07-07 14:56:22,765 [main] INFO LogFileGeneration - After Test method excecuted
 2021-07-07 14:56:22,766 [main] INFO LogFileGeneration - Closing Application
+2021-07-07 15:38:27,626 [main] INFO LogFileGeneration - Application Strated
+2021-07-07 15:38:28,548 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-07 15:40:09,421 [main] INFO LogFileGeneration - Application Strated
+2021-07-07 15:40:09,997 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-07 15:40:29,077 [main] INFO LogFileGeneration - Experience Page
+2021-07-07 15:40:41,317 [main] INFO LogFileGeneration - Education Page
+2021-07-07 15:40:53,828 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-07 15:40:53,858 [main] INFO LogFileGeneration - verifyAccountDeleteFunctionality testcase started
+2021-07-07 15:40:54,059 [main] INFO LogFileGeneration - Mynaukri link clicked
+2021-07-07 15:40:56,590 [main] INFO LogFileGeneration - Setting button link clicked
+2021-07-07 15:41:09,589 [main] INFO LogFileGeneration - ReadMore link clicked
+2021-07-07 15:41:09,988 [main] INFO LogFileGeneration - DeleteAccount choosed and clicked
+2021-07-07 15:41:10,308 [main] INFO LogFileGeneration - Radio Button link clicked
+2021-07-07 15:41:10,415 [main] INFO LogFileGeneration - Delete Account button clicked
+2021-07-07 15:41:10,552 [main] INFO LogFileGeneration - Password entered  clicked
+2021-07-07 15:41:14,332 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-07 15:41:14,333 [main] INFO LogFileGeneration - Closing Application
+2021-07-07 15:43:30,121 [main] INFO LogFileGeneration - Application Strated
+2021-07-07 15:43:31,213 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-07 15:43:50,167 [main] INFO LogFileGeneration - Experience Page
+2021-07-07 15:44:02,014 [main] INFO LogFileGeneration - Education Page
+2021-07-07 15:44:13,418 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-07 15:44:13,425 [main] INFO LogFileGeneration - verifyAccountDeleteFunctionality testcase started
+2021-07-07 15:44:13,690 [main] INFO LogFileGeneration - Mynaukri link clicked
+2021-07-07 15:44:14,950 [main] INFO LogFileGeneration - Setting button link clicked
+2021-07-07 15:44:31,654 [main] INFO LogFileGeneration - ReadMore link clicked
+2021-07-07 15:44:32,113 [main] INFO LogFileGeneration - DeleteAccount choosed and clicked
+2021-07-07 15:44:32,442 [main] INFO LogFileGeneration - Radio Button link clicked
+2021-07-07 15:44:32,548 [main] INFO LogFileGeneration - Delete Account button clicked
+2021-07-07 15:44:32,684 [main] INFO LogFileGeneration - Password entered  clicked
+2021-07-07 15:44:37,247 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-07 15:44:37,248 [main] INFO LogFileGeneration - Closing Application
+2021-07-07 15:46:21,176 [main] INFO LogFileGeneration - Application Strated
+2021-07-07 15:46:21,833 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-07 15:46:40,914 [main] INFO LogFileGeneration - Experience Page
+2021-07-07 15:47:20,620 [main] INFO LogFileGeneration - Education Page
+2021-07-07 15:47:31,789 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-07 15:47:31,800 [main] INFO LogFileGeneration - verifyAccountDeleteFunctionality testcase started
+2021-07-07 15:47:32,064 [main] INFO LogFileGeneration - Mynaukri link clicked
+2021-07-07 15:47:34,083 [main] INFO LogFileGeneration - Setting button link clicked
+2021-07-07 15:47:40,083 [main] INFO LogFileGeneration - ReadMore link clicked
+2021-07-07 15:47:40,495 [main] INFO LogFileGeneration - DeleteAccount choosed and clicked
+2021-07-07 15:47:40,806 [main] INFO LogFileGeneration - Radio Button link clicked
+2021-07-07 15:47:40,926 [main] INFO LogFileGeneration - Delete Account button clicked
+2021-07-07 15:47:41,068 [main] INFO LogFileGeneration - Password entered  clicked
+2021-07-07 15:47:45,764 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-07 15:47:45,765 [main] INFO LogFileGeneration - Closing Application

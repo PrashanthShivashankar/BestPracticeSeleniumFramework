@@ -115,6 +115,8 @@ public class HomePage {
 			if(skipAndContinueButton.isDisplayed())
 			{
 				skipAndContinueButton.click();
+				clickOnMyNaukri();
+				clickOnSettings();
 			}
 			clickOnMyNaukri();
 			clickOnSettings();
