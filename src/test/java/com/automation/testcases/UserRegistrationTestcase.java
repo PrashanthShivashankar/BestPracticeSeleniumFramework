@@ -6,10 +6,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.automation.pages.BaseClass;
+import com.automation.pages.HomePage;
 import com.automation.pages.LoginPage;
 
 public class UserRegistrationTestcase extends BaseClass {
 	LoginPage loginpage;
+	HomePage homepage;
 
 	@DataProvider
 	public Object[][] readNewUserdata() {
@@ -67,8 +69,32 @@ public class UserRegistrationTestcase extends BaseClass {
 		loginpage.choosePassingYear("2017");
 		loginpage.clickEducationPageContinueButton();
 		Assert.assertEquals(loginpage.clickOnProfileComleteSubmitButton(),
-				"Free Job Alert 2021, Latest Job Alert & Notifications – Naukri.com");
+			driver.getTitle());
 		logger.info("Testcase Ended and closing application");
+	}
+	
+	@Test(priority=2, dependsOnMethods="verifyNewUsrerRegistration")
+	public void verifyAccountDeleteFunctionality() {
+		homepage = PageFactory.initElements(driver, HomePage.class);
+		logger4j.info("verifyAccountDeleteFunctionality testcase started");
+		logger = report.createTest("Delete Account Functionality");
+		homepage.clickOnMyNaukri();
+		logger4j.info("Mynaukri link clicked");
+		homepage.clickOnSettings();
+		logger4j.info("Setting button link clicked");
+		homepage.clickReadMoreLink();
+		logger4j.info("ReadMore link clicked");
+		homepage.selectDeleteAccountOption();
+		logger4j.info("DeleteAccount choosed and clicked");
+		homepage.selectDeleteAccountRadioButton();
+		logger4j.info("Radio Button link clicked");
+		homepage.clickOnDeleteaccountButton();
+		logger4j.info("Delete Account button clicked");
+		homepage.enterpasswordForDeleteAccount("Summer@12345");
+		logger4j.info("Password entered  clicked");
+		Assert.assertEquals(homepage.clickOnDeleteAccountAndLagOutButton(), "Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com");
+		logger.info("Delete Account Functionality TestCase Ended and closing application");
+		
 	}
 
 }

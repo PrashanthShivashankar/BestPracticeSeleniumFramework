@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54964" started-at="2021-07-03T14:58:53Z" finished-at="2021-07-03T14:59:48Z">
+  <suite name="Default suite" duration-ms="63469" started-at="2021-07-07T09:25:20Z" finished-at="2021-07-07T09:26:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54964" started-at="2021-07-03T14:58:53Z" finished-at="2021-07-03T14:59:48Z">
+    <test name="Default test" duration-ms="63469" started-at="2021-07-07T09:25:20Z" finished-at="2021-07-07T09:26:23Z">
       <class name="com.automation.testcases.UserRegistrationTestcase">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="setUpSuite" is-config="true" duration-ms="369" started-at="2021-07-03T20:28:53Z" finished-at="2021-07-03T20:28:53Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="setUpSuite" is-config="true" duration-ms="190" started-at="2021-07-07T14:55:19Z" finished-at="2021-07-07T14:55:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="setUp" is-config="true" duration-ms="10900" started-at="2021-07-03T20:28:53Z" finished-at="2021-07-03T20:29:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="setUp" is-config="true" duration-ms="10819" started-at="2021-07-07T14:55:20Z" finished-at="2021-07-07T14:55:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyNewUsrerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="verifyNewUsrerRegistration" duration-ms="41744" started-at="2021-07-03T20:29:06Z" data-provider="readNewUserdata" finished-at="2021-07-03T20:29:47Z">
+        <test-method status="PASS" signature="verifyNewUsrerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="verifyNewUsrerRegistration" duration-ms="39377" started-at="2021-07-07T14:55:31Z" data-provider="readNewUserdata" finished-at="2021-07-07T14:56:11Z">
           <params>
             <param index="0">
               <value>
@@ -146,7 +146,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUsrerRegistration -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="407" started-at="2021-07-03T20:29:47Z" finished-at="2021-07-03T20:29:48Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="407" started-at="2021-07-07T14:56:11Z" finished-at="2021-07-07T14:56:11Z">
           <params>
             <param index="0">
               <value>
@@ -157,7 +157,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDown" is-config="true" duration-ms="747" started-at="2021-07-03T20:29:48Z" finished-at="2021-07-03T20:29:48Z">
+        <test-method status="PASS" signature="verifyAccountDeleteFunctionality()[pri:2, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="verifyAccountDeleteFunctionality" duration-ms="10598" started-at="2021-07-07T14:56:11Z" depends-on-methods="com.automation.testcases.UserRegistrationTestcase.verifyNewUsrerRegistration" finished-at="2021-07-07T14:56:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountDeleteFunctionality -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="420" started-at="2021-07-07T14:56:22Z" finished-at="2021-07-07T14:56:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAccountDeleteFunctionality status=SUCCESS method=UserRegistrationTestcase.verifyAccountDeleteFunctionality()[pri:2, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDown" is-config="true" duration-ms="739" started-at="2021-07-07T14:56:22Z" finished-at="2021-07-07T14:56:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -4,9 +4,9 @@
 
   <test name="Test">
     <classes>
-     
-  <!--    <class name="com.automation.testcases.NaukriLoginPageTest"/>-->  
-      <class name="com.automation.testcases.NaukriProfilePageTest"/>
+      <class name="com.automation.testcases.UserRegistrationTestcase"/>
+  <!--    <class name="com.automation.testcases.NaukriLoginPageTest"/>
+      <class name="com.automation.testcases.NaukriProfilePageTest"/> -->
      
     </classes>
   </test> <!-- Test -->

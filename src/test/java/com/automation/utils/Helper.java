@@ -67,10 +67,18 @@ public class Helper {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
-
+	
+	public static void mouseOverOnElement(WebDriver driver, WebElement element) {
+		Actions action=new Actions(driver);
+		action.moveToElement(element).perform();;
+	}
+	public static void moseOverOnElementAndClick(WebDriver driver, WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).click().perform();
+	}
 	public static void mauseOverOnElement(WebDriver driver, WebElement element) {
 		Actions action = new Actions(driver);
-		action.moveToElement(element).click();
+		action.moveToElement(element).click().perform();
 	}
 
 	public static void selectTheElementFromDropDownList(WebDriver driver, String elementXpath, String searchText) {

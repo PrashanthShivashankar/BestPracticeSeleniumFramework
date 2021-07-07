@@ -9,19 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">20,585</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">74,408</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.automation.testcases.NaukriProfilePageTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1624797714391</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automation.testcases.NaukriLoginPageTest</td><td><a href="#m1">verifyMyNaukriLink</a></td><td rowspan="1">1624797710683</td><td rowspan="1">461</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.automation.testcases.NaukriProfilePageTest</td><td><a href="#m2">tearDown</a></td><td rowspan="1">1624797714397</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">tearDownMethod</a></td><td rowspan="1">1624797714397</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.automation.testcases.NaukriProfilePageTest</td><td><a href="#m4">verifyProfileName</a></td><td rowspan="1">1624797714396</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automation.testcases.NaukriLoginPageTest</td><td><a href="#m5">loginAppTest</a></td><td rowspan="1">1624797704971</td><td rowspan="1">5702</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automation.testcases.UserRegistrationTestcase</td><td><a href="#m0">verifyAccountDeleteFunctionality</a></td><td rowspan="1">1625548324214</td><td rowspan="1">6874</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automation.testcases.UserRegistrationTestcase</td><td><a href="#m1">verifyNewUsrerRegistration</a></td><td rowspan="1">1625548271961</td><td rowspan="1">51388</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.automation.testcases.NaukriProfilePageTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.automation.pages.BaseClass.setUp(BaseClass.java:53)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.automation.testcases.NaukriLoginPageTest#verifyMyNaukriLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;div class=&quot;mTxt&quot;&gt; is not clickable at point (1120,38) because another element &lt;div class=&quot;head&quot;&gt; obscures it
+<h2>Test</h2><h3 id="m0">com.automation.testcases.UserRegistrationTestcase#verifyAccountDeleteFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
 System info: host: &apos;LAPTOP-MOTMPJ0P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\prash\AppData\Local\Temp\rust_mozprofiledsWaUW, rotatable=false, moz:geckodriverVersion=0.26.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=WINDOWS, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=86.0.1, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=16204, browserName=firefox, moz:buildID=20210310152336, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: 8cce6029-72e7-4b67-afd1-5958f52b5b0a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=C:\Users\prash\AppData\Local\Temp\scoped_dir8572_891723644}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58465}, acceptInsecureCerts=false, browserVersion=91.0.4472.124, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 8fefbda69024cc21a897283cfef20b9c
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -31,15 +30,10 @@ Session ID: 8cce6029-72e7-4b67-afd1-5958f52b5b0a
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.automation.pages.LoginPage.cickOnMyNaukriButton(LoginPage.java:42)
-	at com.automation.testcases.NaukriLoginPageTest.verifyMyNaukriLink(NaukriLoginPageTest.java:39)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.automation.testcases.NaukriProfilePageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.automation.testcases.NaukriProfilePageTest#tearDownMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.automation.testcases.NaukriProfilePageTest#verifyProfileName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.automation.pages.BaseClass.setUp(BaseClass.java:53)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.automation.testcases.NaukriLoginPageTest#loginAppTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.automation.pages.HomePage.clickReadMoreLink(HomePage.java:109)
+	at com.automation.testcases.UserRegistrationTestcase.verifyAccountDeleteFunctionality(UserRegistrationTestcase.java:83)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automation.testcases.UserRegistrationTestcase#verifyNewUsrerRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th><th>Parameter #19</th><th>Parameter #20</th><th>Parameter #21</th><th>Parameter #22</th><th>Parameter #23</th><th>Parameter #24</th><th>Parameter #25</th></tr><tr class="param stripe"><td>MNOABCD</td><td>pmno1234567890@gmail.com</td><td>Summer@12345</td><td>9.731534547E9</td><td>3.0</td><td>1.0</td><td>Analyst</td><td>Cognizant Technology Solutions</td><td>2.0</td><td>0.0</td><td>2018.0</td><td>Jan</td><td>Present</td><td>Bangalore/Bengaluru, Karnataka</td><td>2 Months</td><td>Java</td><td>IT Services &amp; Consulting</td><td>IT Software - QA &amp; Testing</td><td>QA/QC Exec.</td><td>Graduation/Diploma</td><td>B.Tech/B.E.</td><td>Computers</td><td>MNO Collage</td><td>2017.0</td><td>F:\\Python-Programs\\SeleniumFrameworkNaukri\\TestData\\PRASHANTH_SELENIUM.pdf</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
