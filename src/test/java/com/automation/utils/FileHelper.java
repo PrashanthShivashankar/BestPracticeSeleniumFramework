@@ -30,10 +30,7 @@ public class FileHelper {
 		} catch (InterruptedException e) {
 			
 			e.printStackTrace();
-		} finally {
-
-			System.out.println("File Upload Sucessfull");
-		}
+		} 
 
 	}
 }

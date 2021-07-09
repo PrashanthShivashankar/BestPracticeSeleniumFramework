@@ -3,6 +3,7 @@ package com.automation.pages;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -17,9 +18,11 @@ import com.automation.utils.Helper;
 
 public class HomePage {
 	WebDriver driver;
+	public Logger logger4j;
 
 	public HomePage(WebDriver ldriver) {
 		this.driver = ldriver;
+		logger4j = Logger.getLogger("LogFileGeneration");
 	}
 
 	private @FindBy(xpath = "//div[@class='user-name roboto-bold-text']") WebElement profileLink;
@@ -46,34 +49,43 @@ public class HomePage {
 	public void clickOnProfile() {
 		Helper.explicitWait(driver, profileLink);
 		profileLink.click();
+		logger4j.info("Clicked on User ProfileLink");
 	}
 
 	public String checkFullName() {
 		Helper.explicitWait(driver, fullname);
+		logger4j.info("User Full name on ProfilePage");
 		return fullname.getText();
 	}
 
 	public String userLocation() {
+		logger4j.info("User Location on ProfilePage");
 		return location.getText();
 	}
 
 	public String userMobile() {
+		logger4j.info("User Mobile Number on ProfilePage");
 		return mobile.getText();
+		
 	}
 
 	public String userExperience() {
+		logger4j.info("User Experience on ProfilePage");
 		return experience.getText();
 	}
 
 	public String userExpectedSalaray() {
+		logger4j.info("User Expected Salary on ProfilePage");
 		return expectedSalary.getText();
 	}
 
 	public String userEmail() {
+		logger4j.info("User Email ID on ProfilePage");
 		return email.getText();
 	}
 
 	public String userProfileStrength() {
+		logger4j.info("User Profile Strength on ProfilePage");
 		return profileStrength.getText();
 	}
 
@@ -86,7 +98,7 @@ public class HomePage {
 			executor.executeScript("arguments[0].click();", attachResumeButton);
 
 			FileHelper.uploadFile(filePath);
-
+			logger4j.info("User Uploaded CV on ProfilePage");
 			Thread.sleep(5000);
 
 			return driver.getPageSource().contains(message);
@@ -101,10 +113,12 @@ public class HomePage {
 	public void clickOnMyNaukri()
 	{
 		Helper.mouseOverOnElement(driver, myNaukrilink);
+		logger4j.info("User Mouse Over On MyNaukri Link on HomePage");
 	}
 	
 	public void clickOnSettings() {
 		Helper.moseOverOnElementAndClick(driver, settingsButton);
+		logger4j.info("User Clikced on Setting Button on HomePage");
 	}
 	
 	public void clickReadMoreLink() {
@@ -122,13 +136,13 @@ public class HomePage {
 			clickOnMyNaukri();
 			clickOnSettings();
 			readMoreLink.click();
-			System.out.println("Element Selected ");
+			logger4j.info("User Clikced on ReadMore Buttonon HomePage");
 			
 		}
 			
 		catch (StaleElementReferenceException e) {
 			readMoreLink.click();
-			System.out.println("Element Selected ");
+			logger4j.info("User Clikced on ReadMore Buttonon HomePage");
 		
 		}
 				
@@ -141,6 +155,8 @@ public class HomePage {
 		for(WebElement temp : list){
 			if(temp.getAttribute("innerHTML").contains("Delete")) {
 				temp.click();
+				logger4j.info("User Choosed Delete Account Option ");
+				break;
 			}
 		}
 	}
@@ -152,6 +168,7 @@ public class HomePage {
 		ExpectedConditions.elementToBeClickable(duplicateAccountRadioButton));
 		if(!duplicateAccountRadioButton.isSelected()) {
 			duplicateAccountRadioButton.click();
+			logger4j.info("User Clikced on RDuplicate Account Radio Button");
 		}
 		
 	}
@@ -159,19 +176,22 @@ public class HomePage {
 	public void clickOnDeleteaccountButton() {
 		
 		deleteAccountButton.click();
+		logger4j.info("User Clikced on DeleteAccount Button");
 	}
 	
 	public void enterpasswordForDeleteAccount(String password) {
 		passwordFieldForAccountDeactivation.sendKeys(password);
+		logger4j.info("User Entered Password to delete account");
 	}
 	
 	public String clickOnDeleteAccountAndLagOutButton() {
 		
 		try {
 			deleteAccountLagoutButton.click();
-			Thread.sleep(3000);
+			logger4j.info("User Clikced on Delete And Logout Button and Account Deleted Sucessfully");
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		return driver.getTitle();

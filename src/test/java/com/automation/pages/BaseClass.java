@@ -53,9 +53,9 @@ public class BaseClass {
 	}
 
 	@AfterClass
-	public void tearDown() {
-		logger4j.info("Closing Application");
+	public void tearDown() {	
 		BrowserFactory.quitBrowser(driver);
+		logger4j.info("Closing Application");
 	}
 
 	@AfterMethod

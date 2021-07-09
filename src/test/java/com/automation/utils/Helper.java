@@ -76,10 +76,10 @@ public class Helper {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click().perform();
 	}
-	public static void mauseOverOnElement(WebDriver driver, WebElement element) {
+	/*public static void mauseOverOnElement(WebDriver driver, WebElement element) {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click().perform();
-	}
+	}*/
 
 	public static void selectTheElementFromDropDownList(WebDriver driver, String elementXpath, String searchText) {
 
@@ -88,11 +88,9 @@ public class Helper {
 			if (temp.getText().equalsIgnoreCase(searchText)) {
 				try {
 					temp.click();
-					System.out.println("Element Selected " + searchText);
 					break;
 				} catch (StaleElementReferenceException e) {
 					temp.click();
-					System.out.println("Element Selected " + searchText);
 					break;
 				}
 			}
@@ -100,7 +98,7 @@ public class Helper {
 		}
 
 	}
-
+/*
 	public static void selectTheElementFromDropDownList1(WebDriver driver, String elementXpath, String searchText) {
 
 		List<WebElement> yearsList = driver.findElements(By.xpath(elementXpath));
@@ -108,17 +106,15 @@ public class Helper {
 			if (temp.getText().contains(searchText)) {
 				try {
 					temp.click();
-					System.out.println("Element Selected " + searchText);
 					break;
 				} catch (StaleElementReferenceException e) {
 					temp.click();
-					System.out.println("Element Selected " + searchText);
 					break;
 				}
 			}
 		}
 	}
-
+*/
 	public static void selectTheElementFromDropDownList2(WebDriver driver, String elementXpath, String searchText) {
 
 		List<WebElement> yearsList = driver.findElements(By.xpath(elementXpath));
@@ -126,11 +122,9 @@ public class Helper {
 			if (temp.getAttribute("innerHTML").equalsIgnoreCase(searchText)) {
 				try {
 					temp.click();
-					System.out.println("Element Selected " + searchText);
 					break;
 				} catch (StaleElementReferenceException e) {
 					temp.click();
-					System.out.println("Element Selected " + searchText);
 					break;
 				}
 			}
@@ -157,11 +151,9 @@ public class Helper {
 			if (temp.getAttribute("innerHTML").equalsIgnoreCase(searchText)) {
 				try {
 					action.moveToElement(temp).click().perform();
-					System.out.println("Element Selected " + searchText);
 					break;
 				} catch (StaleElementReferenceException e) {
 					action.moveToElement(temp).click().perform();
-					System.out.println("Element Selected " + searchText);
 					break;
 				}
 			}

@@ -30,89 +30,82 @@ public class UserRegistrationTestcase extends BaseClass {
 			String HighestQualification, String Course, String Specialization, String Collage, String PassingYear,
 			String CVPath) {
 		try {
-			
-		loginpage = PageFactory.initElements(driver, LoginPage.class);
-		logger4j.info("verifyNewUsrerRegistration testcase started");
-		logger = report.createTest("Personal Page");
-		logger.info("Starting application");
-		loginpage.clickOnLoginLink();
-		loginpage.clickOnNewRegistration();
-		loginpage.clickToChooseProfessional();
-		loginpage.enterUserName(name);
-		loginpage.enterUserEmail("PPmno1234567890@gmail.com");
-		loginpage.enterUserPassword(pass);
-		loginpage.enterUserMobile("9731534547");
-		loginpage.enterUserExperienceYears("3");
-		loginpage.enterUserExperienceMonth("1");
-		loginpage.uploadUserCV("F:\\Python-Programs\\SeleniumFrameworkNaukri\\TestData\\PRASHANTH_SELENIUM.pdf");
-		loginpage.checkTermCheckBox();
-		Assert.assertEquals(loginpage.clickRegisterButton(), driver.getTitle());
-		logger4j.info("Experience Page");
-		loginpage.chooseCurrentDesignation("Analyst");
-		loginpage.chooseCurrentCompany(CurCompany);
-		loginpage.chooseAnnualSalaryINR();
-		loginpage.chooseAnnualSalaryINLakshs("2");
-		loginpage.chooseAnnualSalaryINThousand("10");
-		loginpage.chooseWorkingSinceYears("2018");
-		loginpage.chooseWorkingSinceMonths("Jan");
-		loginpage.chooseWorkingTills(WorkingTill);
-		loginpage.choosecurrentCity("Bangalore Rural, Karnataka");
-		loginpage.chooseCurrentState("Karnataka");
-		loginpage.choosecurrentNoticePeriod(CurNoticePeriod);
-		loginpage.choosecurrentSkils(Skills);
-		loginpage.choosecurrentIndustry(Industry);
-		loginpage.choosecurrentFunctionalArea(FunctionalArea);
-		loginpage.choosecurrentRole(Role);
-		loginpage.chooseEmployeePageContinueButton();
-		logger4j.info("Education Page");
-		loginpage.chooseHigestQualification(HighestQualification);
-		loginpage.chooseHigestCourse(Course);
-		loginpage.chooseSpecialization("Computers");
-		loginpage.chooseCollage(Collage);
-		loginpage.chooseCourseType();
-		loginpage.choosePassingYear("2017");
-		loginpage.clickEducationPageContinueButton();
-		Assert.assertEquals(loginpage.clickOnProfileComleteSubmitButton(),
-			driver.getTitle());
-		logger.info("Testcase Ended and closing application");
-		} catch(Exception e) {
-			System.out.println("Runtime Exception Occured , And closing the Application"+ e.getMessage());
-			HandleException obj=new HandleException();
+
+			loginpage = PageFactory.initElements(driver, LoginPage.class);
+			logger4j.info("verifyNewUsrerRegistration testcase started");
+			logger = report.createTest("Personal Page");
+			logger.info("Starting application");
+			logger4j.info("Personal Details Tab");
+			loginpage.clickOnLoginLink();
+			loginpage.clickOnNewRegistration();
+			loginpage.clickToChooseProfessional();
+			loginpage.enterUserName(name);
+			loginpage.enterUserEmail("PPPPmno1234567890@gmail.com");
+			loginpage.enterUserPassword(pass);
+			loginpage.enterUserMobile("9731534547");
+			loginpage.enterUserExperienceYears("3");
+			loginpage.enterUserExperienceMonth("1");
+			loginpage.uploadUserCV("F:\\Python-Programs\\SeleniumFrameworkNaukri\\TestData\\PRASHANTH_SELENIUM.pdf");
+			loginpage.checkTermCheckBox();
+			Assert.assertEquals(loginpage.clickRegisterButton(), driver.getTitle());
+			logger4j.info("Experience Details Tab");
+			loginpage.chooseCurrentDesignation("Analyst");
+			loginpage.chooseCurrentCompany(CurCompany);
+			loginpage.chooseAnnualSalaryINR();
+			loginpage.chooseAnnualSalaryINLakshs("2");
+			loginpage.chooseAnnualSalaryINThousand("10");
+			loginpage.chooseWorkingSinceYears("2018");
+			loginpage.chooseWorkingSinceMonths("Jan");
+			loginpage.chooseWorkingTills(WorkingTill);
+			loginpage.choosecurrentCity("Bangalore Rural, Karnataka");
+			loginpage.chooseCurrentState("Karnataka");
+			loginpage.choosecurrentNoticePeriod(CurNoticePeriod);
+			loginpage.choosecurrentSkils(Skills);
+			loginpage.choosecurrentIndustry(Industry);
+			loginpage.choosecurrentFunctionalArea(FunctionalArea);
+			loginpage.choosecurrentRole(Role);
+			loginpage.chooseEmployeePageContinueButton();
+			logger4j.info("Education Details Tab");
+			loginpage.chooseHigestQualification(HighestQualification);
+			loginpage.chooseHigestCourse(Course);
+			loginpage.chooseSpecialization("Computers");
+			loginpage.chooseCollage(Collage);
+			loginpage.chooseCourseType();
+			loginpage.choosePassingYear("2017");
+			loginpage.clickEducationPageContinueButton();
+			Assert.assertEquals(loginpage.clickOnProfileComleteSubmitButton(), driver.getTitle());
+			logger.info("Testcase Ended and closing application");
+		} catch (Exception e) {
+			System.out.println("Runtime Exception Occured , And closing the Application" + e.getMessage());
+			HandleException obj = new HandleException();
 			obj.afterGettingException();
 		}
-		
+
 	}
-	
-	@Test(priority=2, dependsOnMethods="verifyNewUsrerRegistration")
+
+	@Test(priority = 2, dependsOnMethods = "verifyNewUsrerRegistration")
 	public void verifyAccountDeleteFunctionality() {
 		try {
-			
-		homepage = PageFactory.initElements(driver, HomePage.class);
-		logger4j.info("verifyAccountDeleteFunctionality testcase started");
-		logger = report.createTest("Delete Account Functionality");
-		homepage.clickOnMyNaukri();
-		logger4j.info("Mynaukri link clicked");
-		homepage.clickOnSettings();
-		logger4j.info("Setting button link clicked");
-		homepage.clickReadMoreLink();
-		logger4j.info("ReadMore link clicked");
-		homepage.selectDeleteAccountOption();
-		logger4j.info("DeleteAccount choosed and clicked");
-		homepage.selectDeleteAccountRadioButton();
-		logger4j.info("Radio Button link clicked");
-		homepage.clickOnDeleteaccountButton();
-		logger4j.info("Delete Account button clicked");
-		homepage.enterpasswordForDeleteAccount("Summer@12345");
-		logger4j.info("Password entered  clicked");
-		Assert.assertEquals(homepage.clickOnDeleteAccountAndLagOutButton(), "Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com");
-		logger.info("Delete Account Functionality TestCase Ended and closing application");
-		} catch(Exception e) {
-			System.out.println("Runtime Exception Occured , And closing the Application"+ e.getMessage());
-			
-			
+
+			homepage = PageFactory.initElements(driver, HomePage.class);
+			logger4j.info("verifyAccountDeleteFunctionality testcase started");
+			logger = report.createTest("Delete Account Functionality");
+			homepage.clickOnMyNaukri();
+			homepage.clickOnSettings();
+			homepage.clickReadMoreLink();
+			homepage.selectDeleteAccountOption();
+			homepage.selectDeleteAccountRadioButton();
+			homepage.clickOnDeleteaccountButton();
+			homepage.enterpasswordForDeleteAccount("Summer@12345");
+			Assert.assertEquals(homepage.clickOnDeleteAccountAndLagOutButton(),
+					"Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com");
+			logger.info("Delete Account Functionality TestCase Ended and closing application");
+			logger4j.info("verifyAccountDeleteFunctionality testcase Ended");
+		} catch (Exception e) {
+			System.out.println("Runtime Exception Occured , And closing the Application" + e.getMessage());
+
 		}
-		
-		
+
 	}
 
 }

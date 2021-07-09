@@ -1444,3 +1444,190 @@
 2021-07-07 16:08:47,428 [main] INFO LogFileGeneration - Setting button link clicked
 2021-07-07 16:08:51,781 [main] INFO LogFileGeneration - After Test method excecuted
 2021-07-07 16:08:51,782 [main] INFO LogFileGeneration - Closing Application
+2021-07-08 21:36:07,161 [main] INFO LogFileGeneration - Application Strated
+2021-07-08 21:36:12,972 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-08 21:36:21,897 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-08 21:36:21,908 [main] INFO LogFileGeneration - Closing Application
+2021-07-08 21:38:35,158 [main] INFO LogFileGeneration - Application Strated
+2021-07-08 21:38:37,108 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-08 21:39:03,520 [main] INFO LogFileGeneration - Experience Page
+2021-07-08 21:39:37,008 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-08 21:39:37,053 [main] INFO LogFileGeneration - Closing Application
+2021-07-08 22:04:45,272 [main] INFO LogFileGeneration - Application Strated
+2021-07-08 22:04:48,244 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-08 22:04:48,391 [main] INFO LogFileGeneration - Clicked on Login Link
+2021-07-08 22:04:55,962 [main] INFO LogFileGeneration - Clicked on Register Link Button
+2021-07-08 22:04:58,020 [main] INFO LogFileGeneration - Clicked on Professinal Option Button
+2021-07-08 22:04:58,178 [main] INFO LogFileGeneration - User Name Entered MNOABCD
+2021-07-08 22:04:58,350 [main] INFO LogFileGeneration - User Email ID Entered PPPmno1234567890@gmail.com
+2021-07-08 22:04:58,473 [main] INFO LogFileGeneration - User password Entered Summer@12345
+2021-07-08 22:04:58,592 [main] INFO LogFileGeneration - User Mobile Number Entered 9731534547
+2021-07-08 22:05:00,550 [main] INFO LogFileGeneration - User Experience Years Selected  3
+2021-07-08 22:05:02,175 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-08 22:05:02,957 [main] INFO LogFileGeneration - Closing Application
+2021-07-08 22:06:36,532 [main] INFO LogFileGeneration - Application Strated
+2021-07-08 22:06:37,048 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-08 22:06:37,174 [main] INFO LogFileGeneration - Clicked on Login Link
+2021-07-08 22:06:39,708 [main] INFO LogFileGeneration - Clicked on Register Link Button
+2021-07-08 22:06:41,786 [main] INFO LogFileGeneration - Clicked on Professinal Option Button
+2021-07-08 22:06:41,946 [main] INFO LogFileGeneration - User Name Entered MNOABCD
+2021-07-08 22:06:42,105 [main] INFO LogFileGeneration - User Email ID Entered PPPPmno1234567890@gmail.com
+2021-07-08 22:06:42,241 [main] INFO LogFileGeneration - User password Entered Summer@12345
+2021-07-08 22:06:42,401 [main] INFO LogFileGeneration - User Mobile Number Entered 9731534547
+2021-07-08 22:06:42,672 [main] INFO LogFileGeneration - User Experience Years Selected  3
+2021-07-08 22:06:42,941 [main] INFO LogFileGeneration - User Experience month Selected  1
+2021-07-08 22:06:53,414 [main] INFO LogFileGeneration - User CV uploaded Sucessfully  F:\Python-Programs\SeleniumFrameworkNaukri\TestData\PRASHANTH_SELENIUM.pdf
+2021-07-08 22:06:54,519 [main] INFO LogFileGeneration - Check Box Already Selected
+2021-07-08 22:06:54,670 [main] INFO LogFileGeneration - Register bitton clicked in Personal Details Page
+2021-07-08 22:06:54,704 [main] INFO LogFileGeneration - Experience Page
+2021-07-08 22:06:55,580 [main] INFO LogFileGeneration - User Current Designation is selected: Analyst
+2021-07-08 22:06:55,636 [main] INFO LogFileGeneration - User Current Company is selected: Cognizant Technology Solutions
+2021-07-08 22:06:55,821 [main] INFO LogFileGeneration - Annual Slary Ruppees Sysbol is selected
+2021-07-08 22:06:56,229 [main] INFO LogFileGeneration - Annual Slary in Lakhs selected 2
+2021-07-08 22:06:56,508 [main] INFO LogFileGeneration - Annual Slary in Lakhs selected 10
+2021-07-08 22:06:56,816 [main] INFO LogFileGeneration - User Work Experience Year selected  2018
+2021-07-08 22:06:57,091 [main] INFO LogFileGeneration - User Work Experience month selected  Jan
+2021-07-08 22:06:57,557 [main] INFO LogFileGeneration - User Work Experience Till Year selected  Present
+2021-07-08 22:07:00,198 [main] INFO LogFileGeneration - User Current City selected  Bangalore Rural, Karnataka
+2021-07-08 22:07:00,888 [main] INFO LogFileGeneration - User Current State selected  Karnataka
+2021-07-08 22:07:01,267 [main] INFO LogFileGeneration - User Current Notice Period selected  2 Months
+2021-07-08 22:07:01,588 [main] INFO LogFileGeneration - User Current Skill selected  Java
+2021-07-08 22:07:02,286 [main] INFO LogFileGeneration - User Current Industry  selected  IT Services & Consulting
+2021-07-08 22:07:04,294 [main] INFO LogFileGeneration - User Current Industry  selected  IT Software - QA & Testing
+2021-07-08 22:07:06,760 [main] INFO LogFileGeneration - User Current Industry  selected  QA/QC Exec.
+2021-07-08 22:07:06,924 [main] INFO LogFileGeneration - Clicked on Continue Button in Experience Page
+2021-07-08 22:07:06,924 [main] INFO LogFileGeneration - Education Page
+2021-07-08 22:07:08,243 [main] INFO LogFileGeneration - User Highest Qualification Selected Graduation/Diploma
+2021-07-08 22:07:09,330 [main] INFO LogFileGeneration - User Course Selected B.Tech/B.E.
+2021-07-08 22:07:12,846 [main] INFO LogFileGeneration - User Specialization Selected Computers
+2021-07-08 22:07:13,040 [main] INFO LogFileGeneration - User Collage Selected MNO Collage
+2021-07-08 22:07:13,209 [main] INFO LogFileGeneration - User Type of Course Selected
+2021-07-08 22:07:13,987 [main] INFO LogFileGeneration - User Year of Passing Selected 2017
+2021-07-08 22:07:14,142 [main] INFO LogFileGeneration - Cliked on Continue button in Educaition Page
+2021-07-08 22:07:16,712 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-08 22:07:17,472 [main] INFO LogFileGeneration - Closing Application
+2021-07-09 09:43:42,931 [main] INFO LogFileGeneration - Application Strated
+2021-07-09 09:43:47,671 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-09 09:43:47,687 [main] INFO LogFileGeneration - Personal Details Tab
+2021-07-09 09:43:48,091 [main] INFO LogFileGeneration - Clicked on Login Link
+2021-07-09 09:43:50,230 [main] INFO LogFileGeneration - Clicked on Register Link Button
+2021-07-09 09:43:53,923 [main] INFO LogFileGeneration - Clicked on Professinal Option Button
+2021-07-09 09:43:54,443 [main] INFO LogFileGeneration - User Name Entered MNOABCD
+2021-07-09 09:43:55,081 [main] INFO LogFileGeneration - User Email ID Entered PPPPmno1234567890@gmail.com
+2021-07-09 09:43:55,334 [main] INFO LogFileGeneration - User password Entered Summer@12345
+2021-07-09 09:43:55,646 [main] INFO LogFileGeneration - User Mobile Number Entered 9731534547
+2021-07-09 09:46:29,766 [main] INFO LogFileGeneration - Application Strated
+2021-07-09 09:46:30,970 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-09 09:46:30,986 [main] INFO LogFileGeneration - Personal Details Tab
+2021-07-09 09:46:31,202 [main] INFO LogFileGeneration - Clicked on Login Link
+2021-07-09 09:46:33,146 [main] INFO LogFileGeneration - Clicked on Register Link Button
+2021-07-09 09:46:35,406 [main] INFO LogFileGeneration - Clicked on Professinal Option Button
+2021-07-09 09:46:35,706 [main] INFO LogFileGeneration - User Name Entered MNOABCD
+2021-07-09 09:46:36,026 [main] INFO LogFileGeneration - User Email ID Entered PPPPmno1234567890@gmail.com
+2021-07-09 09:46:36,252 [main] INFO LogFileGeneration - User password Entered Summer@12345
+2021-07-09 09:46:36,484 [main] INFO LogFileGeneration - User Mobile Number Entered 9731534547
+2021-07-09 09:46:36,971 [main] INFO LogFileGeneration - User Experience Years Selected  3
+2021-07-09 09:46:37,425 [main] INFO LogFileGeneration - User Experience month Selected  1
+2021-07-09 09:46:49,011 [main] INFO LogFileGeneration - User CV uploaded Sucessfully  F:\Python-Programs\SeleniumFrameworkNaukri\TestData\PRASHANTH_SELENIUM.pdf
+2021-07-09 09:46:50,094 [main] INFO LogFileGeneration - Check Box Already Selected
+2021-07-09 09:46:50,240 [main] INFO LogFileGeneration - Register bitton clicked in Personal Details Page
+2021-07-09 09:46:50,312 [main] INFO LogFileGeneration - Experience Details Tab
+2021-07-09 09:46:51,118 [main] INFO LogFileGeneration - User Current Designation is selected: Analyst
+2021-07-09 09:46:51,200 [main] INFO LogFileGeneration - User Current Company is selected: Cognizant Technology Solutions
+2021-07-09 09:46:51,381 [main] INFO LogFileGeneration - Annual Slary Ruppees Sysbol is selected
+2021-07-09 09:46:51,697 [main] INFO LogFileGeneration - Annual Slary in Lakhs selected 2
+2021-07-09 09:46:52,059 [main] INFO LogFileGeneration - Annual Slary in Lakhs selected 10
+2021-07-09 09:46:52,479 [main] INFO LogFileGeneration - User Work Experience Year selected  2018
+2021-07-09 09:46:52,930 [main] INFO LogFileGeneration - User Work Experience month selected  Jan
+2021-07-09 09:46:53,869 [main] INFO LogFileGeneration - User Work Experience Till Year selected  Present
+2021-07-09 09:46:56,592 [main] INFO LogFileGeneration - User Current City selected  Bangalore Rural, Karnataka
+2021-07-09 09:46:57,755 [main] INFO LogFileGeneration - User Current State selected  Karnataka
+2021-07-09 09:46:58,367 [main] INFO LogFileGeneration - User Current Notice Period selected  2 Months
+2021-07-09 09:46:58,974 [main] INFO LogFileGeneration - User Current Skill selected  Java
+2021-07-09 09:47:00,154 [main] INFO LogFileGeneration - User Current Industry  selected  IT Services & Consulting
+2021-07-09 09:47:03,207 [main] INFO LogFileGeneration - User Current Industry  selected  IT Software - QA & Testing
+2021-07-09 09:47:06,951 [main] INFO LogFileGeneration - User Current Industry  selected  QA/QC Exec.
+2021-07-09 09:47:07,255 [main] INFO LogFileGeneration - Clicked on Continue Button in Experience Page
+2021-07-09 09:47:07,255 [main] INFO LogFileGeneration - Education Details Tab
+2021-07-09 09:47:08,660 [main] INFO LogFileGeneration - User Highest Qualification Selected Graduation/Diploma
+2021-07-09 09:47:10,285 [main] INFO LogFileGeneration - User Course Selected B.Tech/B.E.
+2021-07-09 09:47:14,193 [main] INFO LogFileGeneration - User Specialization Selected Computers
+2021-07-09 09:47:14,544 [main] INFO LogFileGeneration - User Collage Selected MNO Collage
+2021-07-09 09:47:14,807 [main] INFO LogFileGeneration - User Type of Course Selected
+2021-07-09 09:47:16,042 [main] INFO LogFileGeneration - User Year of Passing Selected 2017
+2021-07-09 09:47:16,285 [main] INFO LogFileGeneration - Cliked on Continue button in Educaition Page
+2021-07-09 09:47:29,568 [main] INFO LogFileGeneration - Clicked on Profile Complete Submit Button
+2021-07-09 09:47:30,232 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-09 09:47:30,247 [main] INFO LogFileGeneration - verifyAccountDeleteFunctionality testcase started
+2021-07-09 09:47:30,499 [main] INFO LogFileGeneration - User Mause Over On MyNaukri Link on HomePage
+2021-07-09 09:47:33,362 [main] INFO LogFileGeneration - User Clikced on Setting Button on HomePage
+2021-07-09 09:47:37,707 [main] INFO LogFileGeneration - User Mause Over On MyNaukri Link on HomePage
+2021-07-09 09:47:38,005 [main] INFO LogFileGeneration - User Clikced on Setting Button on HomePage
+2021-07-09 09:47:38,188 [main] INFO LogFileGeneration - User Mause Over On MyNaukri Link on HomePage
+2021-07-09 09:47:38,423 [main] INFO LogFileGeneration - User Clikced on Setting Button on HomePage
+2021-07-09 09:47:38,945 [main] INFO LogFileGeneration - User Clikced on ReadMore Buttonon HomePage
+2021-07-09 09:47:39,650 [main] INFO LogFileGeneration - User Choosed Delete Account Option 
+2021-07-09 09:47:40,278 [main] INFO LogFileGeneration - User Clikced on RDuplicate Account Radio Button
+2021-07-09 09:47:40,485 [main] INFO LogFileGeneration - User Clikced on DeleteAccount Button
+2021-07-09 09:47:40,759 [main] INFO LogFileGeneration - User Entered Password to delete account
+2021-07-09 09:47:40,976 [main] INFO LogFileGeneration - User Clikced on RDelete And Logout Button and Account Deleted Sucessfully
+2021-07-09 09:47:42,990 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-09 09:47:43,961 [main] INFO LogFileGeneration - Closing Application
+2021-07-09 09:50:17,988 [main] INFO LogFileGeneration - Application Strated
+2021-07-09 09:50:19,281 [main] INFO LogFileGeneration - verifyNewUsrerRegistration testcase started
+2021-07-09 09:50:19,297 [main] INFO LogFileGeneration - Personal Details Tab
+2021-07-09 09:50:19,537 [main] INFO LogFileGeneration - Clicked on Login Link
+2021-07-09 09:50:21,304 [main] INFO LogFileGeneration - Clicked on Register Link Button
+2021-07-09 09:50:23,538 [main] INFO LogFileGeneration - Clicked on Professinal Option Button
+2021-07-09 09:50:23,817 [main] INFO LogFileGeneration - User Name Entered MNOABCD
+2021-07-09 09:50:24,113 [main] INFO LogFileGeneration - User Email ID Entered PPPPmno1234567890@gmail.com
+2021-07-09 09:50:24,353 [main] INFO LogFileGeneration - User password Entered Summer@12345
+2021-07-09 09:50:24,609 [main] INFO LogFileGeneration - User Mobile Number Entered 9731534547
+2021-07-09 09:50:25,106 [main] INFO LogFileGeneration - User Experience Years Selected  3
+2021-07-09 09:50:25,581 [main] INFO LogFileGeneration - User Experience month Selected  1
+2021-07-09 09:50:36,109 [main] INFO LogFileGeneration - User CV uploaded Sucessfully  F:\Python-Programs\SeleniumFrameworkNaukri\TestData\PRASHANTH_SELENIUM.pdf
+2021-07-09 09:50:37,205 [main] INFO LogFileGeneration - Check Box Already Selected
+2021-07-09 09:50:37,369 [main] INFO LogFileGeneration - Register bitton clicked in Personal Details Page
+2021-07-09 09:50:37,417 [main] INFO LogFileGeneration - Experience Details Tab
+2021-07-09 09:50:38,110 [main] INFO LogFileGeneration - User Current Designation is selected: Analyst
+2021-07-09 09:50:38,166 [main] INFO LogFileGeneration - User Current Company is selected: Cognizant Technology Solutions
+2021-07-09 09:50:38,354 [main] INFO LogFileGeneration - Annual Slary Ruppees Sysbol is selected
+2021-07-09 09:50:38,746 [main] INFO LogFileGeneration - Annual Slary in Lakhs selected 2
+2021-07-09 09:50:39,045 [main] INFO LogFileGeneration - Annual Slary in Lakhs selected 10
+2021-07-09 09:50:39,332 [main] INFO LogFileGeneration - User Work Experience Year selected  2018
+2021-07-09 09:50:39,772 [main] INFO LogFileGeneration - User Work Experience month selected  Jan
+2021-07-09 09:50:40,462 [main] INFO LogFileGeneration - User Work Experience Till Year selected  Present
+2021-07-09 09:50:43,209 [main] INFO LogFileGeneration - User Current City selected  Bangalore Rural, Karnataka
+2021-07-09 09:50:44,390 [main] INFO LogFileGeneration - User Current State selected  Karnataka
+2021-07-09 09:50:44,957 [main] INFO LogFileGeneration - User Current Notice Period selected  2 Months
+2021-07-09 09:50:45,557 [main] INFO LogFileGeneration - User Current Skill selected  Java
+2021-07-09 09:50:46,774 [main] INFO LogFileGeneration - User Current Industry  selected  IT Services & Consulting
+2021-07-09 09:50:49,776 [main] INFO LogFileGeneration - User Current Industry  selected  IT Software - QA & Testing
+2021-07-09 09:50:53,562 [main] INFO LogFileGeneration - User Current Industry  selected  QA/QC Exec.
+2021-07-09 09:50:53,841 [main] INFO LogFileGeneration - Clicked on Continue Button in Experience Page
+2021-07-09 09:50:53,841 [main] INFO LogFileGeneration - Education Details Tab
+2021-07-09 09:50:55,687 [main] INFO LogFileGeneration - User Highest Qualification Selected Graduation/Diploma
+2021-07-09 09:50:57,481 [main] INFO LogFileGeneration - User Course Selected B.Tech/B.E.
+2021-07-09 09:51:01,020 [main] INFO LogFileGeneration - User Specialization Selected Computers
+2021-07-09 09:51:01,217 [main] INFO LogFileGeneration - User Collage Selected MNO Collage
+2021-07-09 09:51:01,387 [main] INFO LogFileGeneration - User Type of Course Selected
+2021-07-09 09:51:02,294 [main] INFO LogFileGeneration - User Year of Passing Selected 2017
+2021-07-09 09:51:02,515 [main] INFO LogFileGeneration - Cliked on Continue button in Educaition Page
+2021-07-09 09:51:07,150 [main] INFO LogFileGeneration - Clicked on Profile Complete Submit Button
+2021-07-09 09:51:08,028 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-09 09:51:08,044 [main] INFO LogFileGeneration - verifyAccountDeleteFunctionality testcase started
+2021-07-09 09:51:08,276 [main] INFO LogFileGeneration - User Mouse Over On MyNaukri Link on HomePage
+2021-07-09 09:51:10,700 [main] INFO LogFileGeneration - User Clikced on Setting Button on HomePage
+2021-07-09 09:51:13,688 [main] INFO LogFileGeneration - User Mouse Over On MyNaukri Link on HomePage
+2021-07-09 09:51:14,130 [main] INFO LogFileGeneration - User Clikced on Setting Button on HomePage
+2021-07-09 09:51:14,442 [main] INFO LogFileGeneration - User Mouse Over On MyNaukri Link on HomePage
+2021-07-09 09:51:14,914 [main] INFO LogFileGeneration - User Clikced on Setting Button on HomePage
+2021-07-09 09:51:15,482 [main] INFO LogFileGeneration - User Clikced on ReadMore Buttonon HomePage
+2021-07-09 09:51:16,215 [main] INFO LogFileGeneration - User Choosed Delete Account Option 
+2021-07-09 09:51:16,816 [main] INFO LogFileGeneration - User Clikced on RDuplicate Account Radio Button
+2021-07-09 09:51:17,056 [main] INFO LogFileGeneration - User Clikced on DeleteAccount Button
+2021-07-09 09:51:17,311 [main] INFO LogFileGeneration - User Entered Password to delete account
+2021-07-09 09:51:17,512 [main] INFO LogFileGeneration - User Clikced on Delete And Logout Button and Account Deleted Sucessfully
+2021-07-09 09:51:22,144 [main] INFO LogFileGeneration - verifyAccountDeleteFunctionality testcase Ended
+2021-07-09 09:51:23,006 [main] INFO LogFileGeneration - After Test method excecuted
+2021-07-09 09:51:24,136 [main] INFO LogFileGeneration - Closing Application

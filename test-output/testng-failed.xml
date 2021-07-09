@@ -9,7 +9,7 @@
           <include name="setUpSuite"/>
           <include name="verifyAccountDeleteFunctionality"/>
           <include name="setUp"/>
-          <include name="verifyNewUsrerRegistration" invocation-numbers="0"/>
+          <include name="verifyNewUsrerRegistration"/>
           <include name="tearDownMethod"/>
         </methods>
       </class> <!-- com.automation.testcases.UserRegistrationTestcase -->
