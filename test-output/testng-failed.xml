@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDownMethod"/>
-          <include name="verifyNewUsrerRegistration" invocation-numbers="0"/>
+          <include name="verifyNewUsrerRegistration" invocation-numbers="0 3"/>
           <include name="setUpSuite"/>
         </methods>
       </class> <!-- com.automation.testcases.UserRegistrationTestcaseForRegressionE2E -->

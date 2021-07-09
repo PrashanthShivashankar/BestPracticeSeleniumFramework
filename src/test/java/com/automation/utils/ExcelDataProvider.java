@@ -17,7 +17,7 @@ public class ExcelDataProvider {
 		FileInputStream file = null;
 
 		try {
-			file = new FileInputStream("./TestData/NaukriEnrollment.xlsx");
+			file = new FileInputStream("./TestData/NaukriEnrollment2.xlsx");
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();
@@ -41,6 +41,12 @@ public class ExcelDataProvider {
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
 				
 			}
+		}
+		try {
+			file.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		return data;
 	}
