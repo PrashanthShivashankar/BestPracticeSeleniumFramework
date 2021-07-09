@@ -3,16 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.automation.testcases.UserRegistrationTestcase">
+      <class name="com.automation.testcases.UserRegistrationTestcaseForRegressionE2E">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUpSuite"/>
-          <include name="verifyAccountDeleteFunctionality"/>
           <include name="setUp"/>
-          <include name="verifyNewUsrerRegistration"/>
           <include name="tearDownMethod"/>
+          <include name="verifyNewUsrerRegistration" invocation-numbers="0"/>
+          <include name="setUpSuite"/>
         </methods>
-      </class> <!-- com.automation.testcases.UserRegistrationTestcase -->
+      </class> <!-- com.automation.testcases.UserRegistrationTestcaseForRegressionE2E -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

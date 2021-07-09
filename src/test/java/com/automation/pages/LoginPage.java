@@ -1,5 +1,6 @@
 package com.automation.pages;
 
+import java.io.File;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -152,6 +153,19 @@ public class LoginPage {
 			logger4j.info("User CV uploaded Sucessfully  " + filePath);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+
+	}
+	public void uploadUserCV1(String filePath) {
+
+		try {
+			File file = new File(filePath);
+			uploadCV.sendKeys(file.getAbsolutePath());
+			logger4j.info("User CV uploaded Sucessfully  " + filePath);
+			
+		} catch (Exception e) {
 			
 			e.printStackTrace();
 		}

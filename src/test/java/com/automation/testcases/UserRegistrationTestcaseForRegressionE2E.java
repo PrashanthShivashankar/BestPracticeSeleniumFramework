@@ -7,11 +7,12 @@ import org.testng.annotations.Test;
 
 import com.automation.exceptionHandeling.HandleException;
 import com.automation.pages.BaseClass;
+import com.automation.pages.BaseClassForRegression;
 import com.automation.pages.HomePage;
 import com.automation.pages.LoginPage;
 import com.automation.utils.BrowserFactory;
 
-public class UserRegistrationTestcase extends BaseClass {
+public class UserRegistrationTestcaseForRegressionE2E extends BaseClassForRegression {
 	LoginPage loginpage;
 	HomePage homepage;
 
@@ -45,7 +46,7 @@ public class UserRegistrationTestcase extends BaseClass {
 			loginpage.enterUserMobile("9731534547");
 			loginpage.enterUserExperienceYears("3");
 			loginpage.enterUserExperienceMonth("1");
-			loginpage.uploadUserCV("F:\\Python-Programs\\SeleniumFrameworkNaukri\\TestData\\PRASHANTH_SELENIUM.pdf");
+			loginpage.uploadUserCV1("./TestData/PRASHANTH_SELENIUM.pdf");
 			loginpage.checkTermCheckBox();
 			Assert.assertEquals(loginpage.clickRegisterButton(), driver.getTitle());
 			logger4j.info("Experience Details Tab");
@@ -74,7 +75,21 @@ public class UserRegistrationTestcase extends BaseClass {
 			loginpage.choosePassingYear("2017");
 			loginpage.clickEducationPageContinueButton();
 			Assert.assertEquals(loginpage.clickOnProfileComleteSubmitButton(), driver.getTitle());
-			logger.info("Testcase Ended and closing application");
+			logger.info("User Registed Sucessfully");
+			logger.info("Starting to delete the registered user");
+			homepage = PageFactory.initElements(driver, HomePage.class);
+			logger4j.info("verifyAccountDeleteFunctionality testcase started");
+			homepage.clickOnMyNaukri();
+			homepage.clickOnSettings();
+			homepage.clickReadMoreLink();
+			homepage.selectDeleteAccountOption();
+			homepage.selectDeleteAccountRadioButton();
+			homepage.clickOnDeleteaccountButton();
+			homepage.enterpasswordForDeleteAccount(pass);
+			Assert.assertEquals(homepage.clickOnDeleteAccountAndLagOutButton(),
+					"Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com");
+			logger.info("Delete Account Functionality TestCase Ended and closing application");
+			logger4j.info("verifyAccountDeleteFunctionality testcase Ended");
 		} catch (Exception e) {
 			System.out.println("Runtime Exception Occured , And closing the Application" + e.getMessage());
 			HandleException obj = new HandleException();
@@ -83,29 +98,5 @@ public class UserRegistrationTestcase extends BaseClass {
 
 	}
 
-	@Test(priority = 2, dependsOnMethods = "verifyNewUsrerRegistration")
-	public void verifyAccountDeleteFunctionality() {
-		try {
-
-			homepage = PageFactory.initElements(driver, HomePage.class);
-			logger4j.info("verifyAccountDeleteFunctionality testcase started");
-			logger = report.createTest("Delete Account Functionality");
-			homepage.clickOnMyNaukri();
-			homepage.clickOnSettings();
-			homepage.clickReadMoreLink();
-			homepage.selectDeleteAccountOption();
-			homepage.selectDeleteAccountRadioButton();
-			homepage.clickOnDeleteaccountButton();
-			homepage.enterpasswordForDeleteAccount("Summer@12345");
-			Assert.assertEquals(homepage.clickOnDeleteAccountAndLagOutButton(),
-					"Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com");
-			logger.info("Delete Account Functionality TestCase Ended and closing application");
-			logger4j.info("verifyAccountDeleteFunctionality testcase Ended");
-		} catch (Exception e) {
-			System.out.println("Runtime Exception Occured , And closing the Application" + e.getMessage());
-
-		}
-
-	}
-
+	
 }

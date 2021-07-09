@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78775" started-at="2021-07-09T04:20:05Z" finished-at="2021-07-09T04:21:24Z">
+  <suite name="Default suite" duration-ms="70573" started-at="2021-07-09T06:06:03Z" finished-at="2021-07-09T06:07:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78775" started-at="2021-07-09T04:20:05Z" finished-at="2021-07-09T04:21:24Z">
-      <class name="com.automation.testcases.UserRegistrationTestcase">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="setUpSuite" is-config="true" duration-ms="375" started-at="2021-07-09T09:50:04Z" finished-at="2021-07-09T09:50:05Z">
+    <test name="Default test" duration-ms="70573" started-at="2021-07-09T06:06:03Z" finished-at="2021-07-09T06:07:14Z">
+      <class name="com.automation.testcases.UserRegistrationTestcaseForRegressionE2E">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.automation.testcases.UserRegistrationTestcaseForRegressionE2E@343f4d3d]" name="setUpSuite" is-config="true" duration-ms="500" started-at="2021-07-09T11:36:02Z" finished-at="2021-07-09T11:36:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="setUp" is-config="true" duration-ms="12637" started-at="2021-07-09T09:50:05Z" finished-at="2021-07-09T09:50:18Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.testcases.UserRegistrationTestcaseForRegressionE2E@343f4d3d]" name="setUp" is-config="true" duration-ms="15842" started-at="2021-07-09T11:36:04Z" finished-at="2021-07-09T11:36:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyNewUsrerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="verifyNewUsrerRegistration" duration-ms="48058" started-at="2021-07-09T09:50:19Z" data-provider="readNewUserdata" finished-at="2021-07-09T09:51:07Z">
+        <test-method status="PASS" signature="verifyNewUsrerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automation.testcases.UserRegistrationTestcaseForRegressionE2E@343f4d3d]" name="verifyNewUsrerRegistration" duration-ms="51445" started-at="2021-07-09T11:36:20Z" data-provider="readNewUserdata" finished-at="2021-07-09T11:37:11Z">
           <params>
             <param index="0">
               <value>
@@ -146,37 +146,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUsrerRegistration -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="814" started-at="2021-07-09T09:51:07Z" finished-at="2021-07-09T09:51:08Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.UserRegistrationTestcaseForRegressionE2E@343f4d3d]" name="tearDownMethod" is-config="true" duration-ms="2215" started-at="2021-07-09T11:37:11Z" finished-at="2021-07-09T11:37:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyNewUsrerRegistration status=SUCCESS method=UserRegistrationTestcase.verifyNewUsrerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNewUsrerRegistration status=SUCCESS method=UserRegistrationTestcaseForRegressionE2E.verifyNewUsrerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.automation.testcases.UserRegistrationTestcaseForRegressionE2E@343f4d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="verifyAccountDeleteFunctionality()[pri:2, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="verifyAccountDeleteFunctionality" duration-ms="14121" started-at="2021-07-09T09:51:08Z" depends-on-methods="com.automation.testcases.UserRegistrationTestcase.verifyNewUsrerRegistration" finished-at="2021-07-09T09:51:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAccountDeleteFunctionality -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="864" started-at="2021-07-09T09:51:22Z" finished-at="2021-07-09T09:51:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAccountDeleteFunctionality status=SUCCESS method=UserRegistrationTestcase.verifyAccountDeleteFunctionality()[pri:2, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testcases.UserRegistrationTestcase@53b32d7]" name="tearDown" is-config="true" duration-ms="1122" started-at="2021-07-09T09:51:23Z" finished-at="2021-07-09T09:51:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.automation.testcases.UserRegistrationTestcase -->
+      </class> <!-- com.automation.testcases.UserRegistrationTestcaseForRegressionE2E -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

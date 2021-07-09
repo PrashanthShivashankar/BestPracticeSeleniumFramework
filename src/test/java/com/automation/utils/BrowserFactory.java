@@ -13,8 +13,8 @@ public class BrowserFactory {
 
 	public static WebDriver startApplication(WebDriver driver, String browserName, String appURL) {
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			// ops.addArguments("--headless", "--disable-gpu",
-			// "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
+			//ops.addArguments("--headless", "--disable-gpu",
+			//"--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 
@@ -60,6 +60,7 @@ public class BrowserFactory {
 
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		driver.manage();
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		try {

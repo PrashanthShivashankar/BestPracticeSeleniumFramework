@@ -124,9 +124,7 @@ public class HomePage {
 	public void clickReadMoreLink() {
 		
 		try {
-			/*WebDriverWait wait = new WebDriverWait(driver, 10);
-			 wait.until(
-			ExpectedConditions.elementToBeClickable(skipAndContinueButton));*/
+			
 			if(skipAndContinueButton.isDisplayed())
 			{
 				skipAndContinueButton.click();
