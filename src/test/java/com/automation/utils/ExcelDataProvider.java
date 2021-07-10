@@ -13,11 +13,11 @@ public class ExcelDataProvider {
 	private Workbook book;
 	private Sheet sheet;
 
-	public Object[][] getTestData(String sheetName) {
+	public Object[][] getTestData(String sheetPath, String sheetName) {
 		FileInputStream file = null;
 
 		try {
-			file = new FileInputStream("./TestData/NaukriEnrollment2.xlsx");
+			file = new FileInputStream(sheetPath);
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();

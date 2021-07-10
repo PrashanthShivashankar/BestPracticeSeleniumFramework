@@ -18,7 +18,7 @@ public class UserRegistrationTestcaseForRegressionE2E extends BaseClassForRegres
 
 	@DataProvider
 	public Object[][] readNewUserdata() {
-		Object[][] data = excel.getTestData("NaukriNewEnrollment");
+		Object[][] data = excel.getTestData("./TestData/NaukriEnrollment3.xlsx","NaukriNewEnrollment");
 		return data;
 
 	}
@@ -91,7 +91,7 @@ public class UserRegistrationTestcaseForRegressionE2E extends BaseClassForRegres
 			logger.info("Delete Account Functionality TestCase Ended and closing application");
 			logger4j.info("verifyAccountDeleteFunctionality testcase Ended");
 		} catch (Exception e) {
-			System.out.println("Runtime Exception Occured , And closing the Application" + e.getMessage());
+			logger4j.error(e.getMessage());
 			HandleException obj = new HandleException();
 			obj.afterGettingException();
 		}

@@ -34,59 +34,99 @@ public class HomePage {
 	private @FindBy(xpath = "//span[@name='Email']") WebElement email;
 	private @FindBy(xpath = "//span[@class='right']") WebElement profileStrength;
 	private @FindBy(xpath = "//input[@id='attachCV']") WebElement attachResumeButton;
-	private @FindBy(xpath="//div[normalize-space()='My Naukri']") WebElement myNaukrilink;
-	private @FindBy(xpath="//a[normalize-space()='Settings']") WebElement settingsButton;
-	private @FindBy(xpath="//a[normalize-space()='Read More']") WebElement readMoreLink;
-	private @FindBy(xpath="//input[@id='notLookingFor']") WebElement deactivatedropDownButton;
-	private String deactivatedropdownlist="//div[@id='ul_notLooking']/ul/descendant::a";
-	private @FindBy(xpath="//input[@id='duplicateAccount' and @type='radio']/following-sibling::label") WebElement duplicateAccountRadioButton;
-	private @FindBy(xpath="//button[normalize-space()='DELETE ACCOUNT']") WebElement deleteAccountButton;
-	private @FindBy(xpath="//input[@id='passwordField']") WebElement passwordFieldForAccountDeactivation;
-	private @FindBy(xpath="//button[@id='passowrdConfirmation']") WebElement deleteAccountLagoutButton;
-	private @FindBy(xpath="//button[text()='SKIP AND CONTINUE']") WebElement skipAndContinueButton;
-	private @FindBy(xpath="//a[@class='fl nLogo']//img") WebElement homepageButton;
-	
+	private @FindBy(xpath = "//div[normalize-space()='My Naukri']") WebElement myNaukrilink;
+	private @FindBy(xpath = "//a[normalize-space()='Settings']") WebElement settingsButton;
+	private @FindBy(xpath = "//a[normalize-space()='Read More']") WebElement readMoreLink;
+	private @FindBy(xpath = "//input[@id='notLookingFor']") WebElement deactivatedropDownButton;
+	private String deactivatedropdownlist = "//div[@id='ul_notLooking']/ul/descendant::a";
+	private @FindBy(xpath = "//input[@id='duplicateAccount' and @type='radio']/following-sibling::label") WebElement duplicateAccountRadioButton;
+	private @FindBy(xpath = "//button[normalize-space()='DELETE ACCOUNT']") WebElement deleteAccountButton;
+	private @FindBy(xpath = "//input[@id='passwordField']") WebElement passwordFieldForAccountDeactivation;
+	private @FindBy(xpath = "//button[@id='passowrdConfirmation']") WebElement deleteAccountLagoutButton;
+	private @FindBy(xpath = "//button[text()='SKIP AND CONTINUE']") WebElement skipAndContinueButton;
+	private @FindBy(xpath = "//a[@class='fl nLogo']//img") WebElement homepageButton;
+
 	public void clickOnProfile() {
-		Helper.explicitWait(driver, profileLink);
-		profileLink.click();
-		logger4j.info("Clicked on User ProfileLink");
+		try {
+			Helper.explicitWait(driver, profileLink);
+			profileLink.click();
+			logger4j.info("Clicked on User ProfileLink");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public String checkFullName() {
-		Helper.explicitWait(driver, fullname);
-		logger4j.info("User Full name on ProfilePage");
+		try {
+			Helper.explicitWait(driver, fullname);
+			logger4j.info("User Full name on ProfilePage");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 		return fullname.getText();
 	}
 
 	public String userLocation() {
-		logger4j.info("User Location on ProfilePage");
-		return location.getText();
+		try {
+			logger4j.info("User Location on ProfilePage");
+			return location.getText();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+			return null;
+		}
+
 	}
 
 	public String userMobile() {
-		logger4j.info("User Mobile Number on ProfilePage");
-		return mobile.getText();
-		
+		try {
+			logger4j.info("User Mobile Number on ProfilePage");
+			return mobile.getText();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+			return null;
+		}
+
 	}
 
 	public String userExperience() {
-		logger4j.info("User Experience on ProfilePage");
-		return experience.getText();
+		try {
+			logger4j.info("User Experience on ProfilePage");
+			return experience.getText();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+			return null;
+		}
+
 	}
 
 	public String userExpectedSalaray() {
-		logger4j.info("User Expected Salary on ProfilePage");
-		return expectedSalary.getText();
+		try {
+			logger4j.info("User Expected Salary on ProfilePage");
+			return expectedSalary.getText();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+			return null;
+		}
 	}
 
 	public String userEmail() {
-		logger4j.info("User Email ID on ProfilePage");
-		return email.getText();
+		try {
+			logger4j.info("User Email ID on ProfilePage");
+			return email.getText();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+			return null;
+		}
 	}
 
 	public String userProfileStrength() {
-		logger4j.info("User Profile Strength on ProfilePage");
-		return profileStrength.getText();
+		try {
+			logger4j.info("User Profile Strength on ProfilePage");
+			return profileStrength.getText();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+			return null;
+		}
 	}
 
 	public boolean uploadResume(String filePath, String message) {
@@ -102,31 +142,36 @@ public class HomePage {
 			Thread.sleep(5000);
 
 			return driver.getPageSource().contains(message);
-		} catch (InterruptedException e) {
-			
-			e.printStackTrace();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 			return false;
 		}
 
 	}
-	
-	public void clickOnMyNaukri()
-	{
-		Helper.mouseOverOnElement(driver, myNaukrilink);
-		logger4j.info("User Mouse Over On MyNaukri Link on HomePage");
-	}
-	
-	public void clickOnSettings() {
-		Helper.moseOverOnElementAndClick(driver, settingsButton);
-		logger4j.info("User Clikced on Setting Button on HomePage");
-	}
-	
-	public void clickReadMoreLink() {
-		
+
+	public void clickOnMyNaukri() {
 		try {
-			
-			if(skipAndContinueButton.isDisplayed())
-			{
+			Helper.mouseOverOnElement(driver, myNaukrilink);
+			logger4j.info("User Mouse Over On MyNaukri Link on HomePage");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
+	}
+
+	public void clickOnSettings() {
+		try {
+			Helper.moseOverOnElementAndClick(driver, settingsButton);
+			logger4j.info("User Clikced on Setting Button on HomePage");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
+	}
+
+	public void clickReadMoreLink() {
+
+		try {
+
+			if (skipAndContinueButton.isDisplayed()) {
 				skipAndContinueButton.click();
 				clickOnMyNaukri();
 				clickOnSettings();
@@ -135,67 +180,89 @@ public class HomePage {
 			clickOnSettings();
 			readMoreLink.click();
 			logger4j.info("User Clikced on ReadMore Buttonon HomePage");
-			
+
 		}
-			
+
 		catch (StaleElementReferenceException e) {
 			readMoreLink.click();
 			logger4j.info("User Clikced on ReadMore Buttonon HomePage");
-		
+
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
-				
-	
+
 	}
-	
+
 	public void selectDeleteAccountOption() {
-		deactivatedropDownButton.click();
-		List<WebElement> list=driver.findElements(By.xpath(deactivatedropdownlist));
-		for(WebElement temp : list){
-			if(temp.getAttribute("innerHTML").contains("Delete")) {
-				temp.click();
-				logger4j.info("User Choosed Delete Account Option ");
-				break;
+		try {
+			deactivatedropDownButton.click();
+			List<WebElement> list = driver.findElements(By.xpath(deactivatedropdownlist));
+			for (WebElement temp : list) {
+				if (temp.getAttribute("innerHTML").contains("Delete")) {
+					temp.click();
+					logger4j.info("User Choosed Delete Account Option ");
+					break;
+				}
 			}
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
 	}
-	
+
 	public void selectDeleteAccountRadioButton() {
-		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		 wait.until(
-		ExpectedConditions.elementToBeClickable(duplicateAccountRadioButton));
-		if(!duplicateAccountRadioButton.isSelected()) {
-			duplicateAccountRadioButton.click();
-			logger4j.info("User Clikced on RDuplicate Account Radio Button");
+		try {
+
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.elementToBeClickable(duplicateAccountRadioButton));
+			if (!duplicateAccountRadioButton.isSelected()) {
+				duplicateAccountRadioButton.click();
+				logger4j.info("User Clikced on RDuplicate Account Radio Button");
+			}
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
-		
+
 	}
-	
+
 	public void clickOnDeleteaccountButton() {
-		
-		deleteAccountButton.click();
-		logger4j.info("User Clikced on DeleteAccount Button");
+		try {
+			deleteAccountButton.click();
+			logger4j.info("User Clikced on DeleteAccount Button");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
-	
+
 	public void enterpasswordForDeleteAccount(String password) {
-		passwordFieldForAccountDeactivation.sendKeys(password);
-		logger4j.info("User Entered Password to delete account");
+		try {
+			passwordFieldForAccountDeactivation.sendKeys(password);
+			logger4j.info("User Entered Password to delete account");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
-	
+
 	public String clickOnDeleteAccountAndLagOutButton() {
-		
+
 		try {
 			deleteAccountLagoutButton.click();
 			logger4j.info("User Clikced on Delete And Logout Button and Account Deleted Sucessfully");
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			
+
 			e.printStackTrace();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
+
 		return driver.getTitle();
 	}
-	
+
 	public void clickOnHomepageButton() {
-		homepageButton.click();
+		try {
+			homepageButton.click();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 }

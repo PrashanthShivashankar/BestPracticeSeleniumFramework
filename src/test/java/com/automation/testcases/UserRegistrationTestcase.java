@@ -17,7 +17,7 @@ public class UserRegistrationTestcase extends BaseClass {
 
 	@DataProvider
 	public Object[][] readNewUserdata() {
-		Object[][] data = excel.getTestData("NaukriNewEnrollment");
+		Object[][] data = excel.getTestData("./TestData/NaukriEnrollment3.xlsx","NaukriNewEnrollment");
 		return data;
 
 	}

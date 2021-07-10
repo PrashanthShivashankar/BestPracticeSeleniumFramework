@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BrowserFactory {
 	static ChromeOptions ops = new ChromeOptions();
 
@@ -15,16 +17,20 @@ public class BrowserFactory {
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			//ops.addArguments("--headless", "--disable-gpu",
 			//"--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			driver = new ChromeDriver();
+			//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			ops.addArguments("--disable-infobars");
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(ops);
 
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 
 		} else if (browserName.equalsIgnoreCase("IE")) {
 
-			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
+			//System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
+			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 
 		} else {

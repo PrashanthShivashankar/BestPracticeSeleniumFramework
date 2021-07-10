@@ -13,7 +13,7 @@ public class VeriFyTestDataSetUp
 	public Object[][]  readExcelData()
 	{
 		excel=new  ExcelDataProvider();
-		Object[][] data=excel.getTestData("UserProfile");
+		Object[][] data=excel.getTestData("./TestData/NaukriEnrollment3.xlsx","NaukriNewEnrollment");
 	    return data;
 		
 	}

@@ -34,7 +34,7 @@ public class NaukriProfilePageTest extends BaseClass
 	@DataProvider
 	public Object[][]  readExcelData()
 	{
-		Object[][] data=excel.getTestData("UserProfile");
+		Object[][] data=excel.getTestData("./TestData/NaukriEnrollment3.xlsx","NaukriNewEnrollment");
 	    return data;
 		
 	}

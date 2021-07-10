@@ -47,19 +47,25 @@ public class Helper {
 	}
 
 	public static void closeMultipleChildWindow(WebDriver driver) {
+		try {
+			Thread.sleep(1000);
+			String mainWindowHandle = driver.getWindowHandle();
+			Set<String> allWindowHandles = driver.getWindowHandles();
+			Iterator<String> iterator = allWindowHandles.iterator();
 
-		String mainWindowHandle = driver.getWindowHandle();
-		Set<String> allWindowHandles = driver.getWindowHandles();
-		Iterator<String> iterator = allWindowHandles.iterator();
-
-		while (iterator.hasNext()) {
-			String ChildWindow = iterator.next();
-			if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) {
-				driver.switchTo().window(ChildWindow).close();
-
+			while (iterator.hasNext()) {
+				String ChildWindow = iterator.next();
+				if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) {
+					driver.switchTo().window(ChildWindow).close();
+				}
 			}
+			driver.switchTo().window(mainWindowHandle);
+			
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
 		}
-		driver.switchTo().window(mainWindowHandle);
+		
 
 	}
 

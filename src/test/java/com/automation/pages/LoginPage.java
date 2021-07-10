@@ -84,31 +84,53 @@ public class LoginPage {
 	private @FindBy(xpath = "//a[text()='Skip this step']") WebElement submitButton;
 
 	public void clickOnLoginLink() {
-		loginLink.click();
-		logger4j.info("Clicked on Login Link");
+		try {
+			loginLink.click();
+			logger4j.info("Clicked on Login Link");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
+
 	}
 
 	public String loginToApplication(String username, String pass) {
+		try {
+			userEmail.sendKeys(username);
+			password.sendKeys(pass);
+			loginButton.click();
 
-		userEmail.sendKeys(username);
-		password.sendKeys(pass);
-		loginButton.click();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 		return driver.getTitle();
+
 	}
 
 	public void cickOnMyNaukriButton() {
-		myNaukriButton.click();
-		logger4j.info("Clicked on MyNauri Link Button");
+		try {
+			myNaukriButton.click();
+			logger4j.info("Clicked on MyNauri Link Button");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void clickOnNewRegistration() {
-		registerLink.click();
-		logger4j.info("Clicked on Register Link Button");
+		try {
+			registerLink.click();
+			logger4j.info("Clicked on Register Link Button");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void clickToChooseProfessional() {
-		professionalButton.click();
-		logger4j.info("Clicked on Professinal Option Button");
+		try {
+			professionalButton.click();
+			logger4j.info("Clicked on Professinal Option Button");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void enterUserName(String name) {
@@ -117,31 +139,55 @@ public class LoginPage {
 	}
 
 	public void enterUserEmail(String userEmail) {
-		email.sendKeys(userEmail);
-		logger4j.info("User Email ID Entered " + userEmail);
+		try {
+			email.sendKeys(userEmail);
+			logger4j.info("User Email ID Entered " + userEmail);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void enterUserPassword(String pass) {
-		passForNewUser.sendKeys(pass);
-		logger4j.info("User password Entered " + pass);
+		try {
+			passForNewUser.sendKeys(pass);
+			logger4j.info("User password Entered " + pass);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void enterUserMobile(String numb) {
-		mobileNumber.sendKeys(numb);
-		logger4j.info("User Mobile Number Entered " + numb);
+		try {
+			mobileNumber.sendKeys(numb);
+			logger4j.info("User Mobile Number Entered " + numb);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void enterUserExperienceYears(String year) {
-		expYear.sendKeys(year);
-		Helper.selectTheElementFromDropDownList3(driver, "//input[@name='expYear']/ancestor::div[@class='DDwrap']/following-sibling::div/ul/li/div/div/span[1]", year);
-		logger4j.info("User Experience Years Selected  " + year);
+		try {
+			expYear.sendKeys(year);
+			Helper.selectTheElementFromDropDownList3(driver,
+					"//input[@name='expYear']/ancestor::div[@class='DDwrap']/following-sibling::div/ul/li/div/div/span[1]",
+					year);
+			logger4j.info("User Experience Years Selected  " + year);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void enterUserExperienceMonth(String month) {
-		expMonth.click();
-		Helper.selectTheElementFromDropDownList3(driver, "//input[@name='expMonth']/ancestor::div[@class='DDwrap']/following-sibling::div/ul/li/div/div/span[1]", month);
-		logger4j.info("User Experience month Selected  " + month);
+		try {
+			expMonth.click();
+			Helper.selectTheElementFromDropDownList3(driver,
+					"//input[@name='expMonth']/ancestor::div[@class='DDwrap']/following-sibling::div/ul/li/div/div/span[1]",
+					month);
+			logger4j.info("User Experience month Selected  " + month);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void uploadUserCV(String filePath) {
@@ -152,171 +198,233 @@ public class LoginPage {
 			FileHelper.uploadFile(filePath);
 			logger4j.info("User CV uploaded Sucessfully  " + filePath);
 			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			
-			e.printStackTrace();
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
 
 	}
+
 	public void uploadUserCV1(String filePath) {
 
 		try {
 			File file = new File(filePath);
 			uploadCV.sendKeys(file.getAbsolutePath());
 			logger4j.info("User CV uploaded Sucessfully  " + filePath);
-			
+
 		} catch (Exception e) {
-			
-			e.printStackTrace();
+			logger4j.error(e.getMessage());
 		}
 
 	}
 
 	public void checkTermCheckBox() {
-		if (term.isSelected()) {
-			logger4j.info("Check Box Already Selected");
-		} else {
-			term.click();
-			logger4j.info("Check Box now Selected");
-
+		try {
+			if (term.isSelected()) {
+				logger4j.info("Check Box Already Selected");
+			} else {
+				term.click();
+				logger4j.info("Check Box now Selected");
+			}
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
 
 	}
 
 	public String clickRegisterButton() {
-		registerNowButton.click();
-		logger4j.info("Register bitton clicked in Personal Details Page");
+		try {
+			registerNowButton.click();
+			logger4j.info("Register bitton clicked in Personal Details Page");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 		return driver.getTitle();
 
 	}
 
 	public void chooseCurrentDesignation(String desig) {
-		Helper.passValueToElementUsingJS(driver, currentDesignation, desig);
-		logger4j.info("User Current Designation is selected: " +desig);
+		try {
+			Helper.passValueToElementUsingJS(driver, currentDesignation, desig);
+			logger4j.info("User Current Designation is selected: " + desig);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void chooseCurrentCompany(String comp) {
-		Helper.passValueToElementUsingJS(driver, currentCompany, comp);
-		logger4j.info("User Current Company is selected: " +comp);
+		try {
+			Helper.passValueToElementUsingJS(driver, currentCompany, comp);
+			logger4j.info("User Current Company is selected: " + comp);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void chooseAnnualSalaryINR() {
-		if (!currencyRupees.isSelected()) {
-			currencyRupees.click();
-			logger4j.info("Annual Slary Ruppees Sysbol is selected");
+		try {
+			if (!currencyRupees.isSelected()) {
+				currencyRupees.click();
+				logger4j.info("Annual Slary Ruppees Sysbol is selected");
+			}
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
 
 	}
 
 	public void chooseAnnualSalaryINLakshs(String slaryInLakh) {
-		salaryInLakhsButton.sendKeys(slaryInLakh);
-		Helper.selectTheElementFromDropDownList(driver, salaryInLakhsListPath, slaryInLakh);
-		logger4j.info("Annual Slary in Lakhs selected " + slaryInLakh);
-		
+		try {
+			salaryInLakhsButton.sendKeys(slaryInLakh);
+			Helper.selectTheElementFromDropDownList(driver, salaryInLakhsListPath, slaryInLakh);
+			logger4j.info("Annual Slary in Lakhs selected " + slaryInLakh);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void chooseAnnualSalaryINThousand(String slaryInThousand) {
-		salaryInThoundsButton.sendKeys(slaryInThousand);
-		Helper.selectTheElementFromDropDownList(driver, salaryInThousandsListPath, slaryInThousand);
-		logger4j.info("Annual Slary in Lakhs selected " + slaryInThousand);
-		
+		try {
+			salaryInThoundsButton.sendKeys(slaryInThousand);
+			Helper.selectTheElementFromDropDownList(driver, salaryInThousandsListPath, slaryInThousand);
+			logger4j.info("Annual Slary in Lakhs selected " + slaryInThousand);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void chooseWorkingSinceYears(String year) {
-		workingSinceYearButton.sendKeys(year);
-		Helper.selectTheElementFromDropDownList(driver, workingSinceYearsListPath, year);
-		logger4j.info("User Work Experience Year selected  " + year);
+		try {
+			workingSinceYearButton.sendKeys(year);
+			Helper.selectTheElementFromDropDownList(driver, workingSinceYearsListPath, year);
+			logger4j.info("User Work Experience Year selected  " + year);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void chooseWorkingSinceMonths(String month) {
-		workingSinceMonthButton.sendKeys(month);
-		Helper.selectTheElementFromDropDownList(driver, workingSinceMonthsListPath, month);
-		logger4j.info("User Work Experience month selected  " + month);
+		try {
+			workingSinceMonthButton.sendKeys(month);
+			Helper.selectTheElementFromDropDownList(driver, workingSinceMonthsListPath, month);
+			logger4j.info("User Work Experience month selected  " + month);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void chooseWorkingTills(String year) {
-		endYearButton.sendKeys(year);
-		Helper.selectTheElementFromDropDownByMouseOver(driver, endYearList, year);
-		logger4j.info("User Work Experience Till Year selected  " + year);
+		try {
+			endYearButton.sendKeys(year);
+			Helper.selectTheElementFromDropDownByMouseOver(driver, endYearList, year);
+			logger4j.info("User Work Experience Till Year selected  " + year);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void choosecurrentCity(String city) {
-		currentCity.sendKeys(city);
-		List<WebElement> list = driver.findElements(By.xpath(currentCityList));
-		Actions action = new Actions(driver);
-		for (WebElement temp : list) {
-			if (temp.getAttribute("innerHTML").equalsIgnoreCase(city)) {
-				action.moveToElement(temp).click().perform();
-				logger4j.info("User Current City selected  " + temp.getAttribute("innerHTML"));
-				break;
-			}
+		try {
+			currentCity.sendKeys(city);
+			List<WebElement> list = driver.findElements(By.xpath(currentCityList));
+			Actions action = new Actions(driver);
+			for (WebElement temp : list) {
+				if (temp.getAttribute("innerHTML").equalsIgnoreCase(city)) {
+					action.moveToElement(temp).click().perform();
+					logger4j.info("User Current City selected  " + temp.getAttribute("innerHTML"));
+					break;
+				}
 
+			}
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
 
 	}
 
 	public void chooseCurrentState(String State) {
-		stateButton.click();
-		List<WebElement> list = driver.findElements(By.xpath(stateList));
-		Actions action = new Actions(driver);
-		for (WebElement temp : list) {
-			if (temp.getAttribute("innerHTML").equalsIgnoreCase(State)) {
+		try {
+			stateButton.click();
+			List<WebElement> list = driver.findElements(By.xpath(stateList));
+			Actions action = new Actions(driver);
+			for (WebElement temp : list) {
+				if (temp.getAttribute("innerHTML").equalsIgnoreCase(State)) {
 
-				temp.click();
-				logger4j.info("User Current State selected  " + temp.getAttribute("innerHTML"));
-				break;
+					temp.click();
+					logger4j.info("User Current State selected  " + temp.getAttribute("innerHTML"));
+					break;
+				}
+
 			}
-
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
-		
+
 	}
 
 	public void choosecurrentNoticePeriod(String period) {
-		noticePeriodfield.click();
-		Helper.selectTheElementFromDropDownList(driver, noticeperiodList, period);
-		logger4j.info("User Current Notice Period selected  " + period);
-		
+		try {
+			noticePeriodfield.click();
+			Helper.selectTheElementFromDropDownList(driver, noticeperiodList, period);
+			logger4j.info("User Current Notice Period selected  " + period);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
 	public void choosecurrentSkils(String skill) {
-		keySkills.sendKeys(skill);
-		List<WebElement> list = driver.findElements(By.xpath(skillsList));
-		Actions action = new Actions(driver);
-		for (WebElement temp : list) {
-			if (temp.getAttribute("innerHTML").equalsIgnoreCase(skill)) {
-				temp.click();
-				logger4j.info("User Current Skill selected  "  + temp.getAttribute("innerHTML"));
-			}
+		try {
+			keySkills.sendKeys(skill);
+			List<WebElement> list = driver.findElements(By.xpath(skillsList));
+			Actions action = new Actions(driver);
+			for (WebElement temp : list) {
+				if (temp.getAttribute("innerHTML").equalsIgnoreCase(skill)) {
+					temp.click();
+					logger4j.info("User Current Skill selected  " + temp.getAttribute("innerHTML"));
+				}
 
+			}
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
 
 	}
 
 	public void choosecurrentIndustry(String industry) {
-		curIndustryButton.click();
-		Helper.selectTheElementFromDropDownList(driver, curIndustryList, industry);
-		logger4j.info("User Current Industry  selected  " + industry);
+		try {
+			curIndustryButton.click();
+			Helper.selectTheElementFromDropDownList(driver, curIndustryList, industry);
+			logger4j.info("User Current Industry  selected  " + industry);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void choosecurrentFunctionalArea(String funcArea) {
-		functionalAreaButton.click();
-		Helper.selectTheElementFromDropDownList(driver, functionalAreaList, funcArea);
-		logger4j.info("User Current Industry  selected  " + funcArea);
+		try {
+			functionalAreaButton.click();
+			Helper.selectTheElementFromDropDownList(driver, functionalAreaList, funcArea);
+			logger4j.info("User Current Industry  selected  " + funcArea);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void choosecurrentRole(String curRole) {
-		roleButton.click();
-		Helper.selectTheElementFromDropDownList(driver, roleList, curRole);
-		logger4j.info("User Current Industry  selected  " + curRole);
-		
+		try {
+			roleButton.click();
+			Helper.selectTheElementFromDropDownList(driver, roleList, curRole);
+			logger4j.info("User Current Industry  selected  " + curRole);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void chooseEmployeePageContinueButton() {
@@ -326,17 +434,23 @@ public class LoginPage {
 	}
 
 	public void chooseHigestQualification(String qualification) {
-		higestQualificationButton.click();
-		Helper.selectTheElementFromDropDownList2(driver, higestQualificationList, qualification);
-		logger4j.info("User Highest Qualification Selected " +qualification);
-		
+		try {
+			higestQualificationButton.click();
+			Helper.selectTheElementFromDropDownList2(driver, higestQualificationList, qualification);
+			logger4j.info("User Highest Qualification Selected " + qualification);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void chooseHigestCourse(String course) {
-		courseButton.click();
-		Helper.selectTheElementFromDropDownList2(driver, courseList, course);
-		logger4j.info("User Course Selected " +course);
-		
+		try {
+			courseButton.click();
+			Helper.selectTheElementFromDropDownList2(driver, courseList, course);
+			logger4j.info("User Course Selected " + course);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 
 	}
 
@@ -345,43 +459,62 @@ public class LoginPage {
 			Thread.sleep(3000);
 			specializationButton.click();
 			Helper.selectTheElementFromDropDownList2(driver, specializationList, specialization);
-			logger4j.info("User Specialization Selected " +specialization);
-		} catch (InterruptedException e) {
-			
-			e.printStackTrace();
+			logger4j.info("User Specialization Selected " + specialization);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
 	}
 
 	public void chooseCollage(String collage) {
-		institute.sendKeys(collage);
-		logger4j.info("User Collage Selected " +collage);
+		try {
+			institute.sendKeys(collage);
+			logger4j.info("User Collage Selected " + collage);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 	}
 
 	public void chooseCourseType() {
-		if (!fullTimeButton.isSelected()) {
-			fullTimeButton.click();
-			logger4j.info("User Type of Course Selected");
+		try {
+			if (!fullTimeButton.isSelected()) {
+				fullTimeButton.click();
+				logger4j.info("User Type of Course Selected");
+			}
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
 		}
 
 	}
 
 	public void choosePassingYear(String year) {
-		passingYear.click();
-		Helper.selectTheElementFromDropDownList(driver, passingYearList, year);
-		logger4j.info("User Year of Passing Selected " +year);
-		
+		try {
+			passingYear.click();
+			Helper.selectTheElementFromDropDownList(driver, passingYearList, year);
+			logger4j.info("User Year of Passing Selected " + year);
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
+
 	}
 
 	public String clickEducationPageContinueButton() {
-		eduPageContinueButton.click();
-		logger4j.info("Cliked on Continue button in Educaition Page");
+		try {
+			eduPageContinueButton.click();
+			logger4j.info("Cliked on Continue button in Educaition Page");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 		return driver.getTitle();
 
 	}
 
 	public String clickOnProfileComleteSubmitButton() {
-		submitButton.click();
-		logger4j.info("Clicked on Profile Complete Submit Button");
+		try {
+			submitButton.click();
+			logger4j.info("Clicked on Profile Complete Submit Button");
+		} catch (Exception e) {
+			logger4j.error(e.getMessage());
+		}
 		return driver.getTitle();
 	}
 

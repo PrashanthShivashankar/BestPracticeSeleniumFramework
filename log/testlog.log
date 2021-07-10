@@ -2427,3 +2427,100 @@
 2021-07-09 12:18:49,612 - LogFileGeneration -INFO - verifyAccountDeleteFunctionality testcase Ended
 2021-07-09 12:18:51,197 - LogFileGeneration -INFO - After Test method excecuted
 2021-07-09 12:18:52,065 - LogFileGeneration -INFO - Closing Application
+2021-07-10 11:47:50,036 - LogFileGeneration -INFO - Application Strated
+2021-07-10 11:47:50,489 - LogFileGeneration -INFO - verifyNewUsrerRegistration testcase started
+2021-07-10 11:47:50,503 - LogFileGeneration -INFO - Personal Details Tab
+2021-07-10 11:47:52,386 - LogFileGeneration -INFO - Clicked on Login Link
+2021-07-10 11:47:57,184 - LogFileGeneration -INFO - Clicked on Register Link Button
+2021-07-10 11:48:01,868 - LogFileGeneration -INFO - Clicked on Professinal Option Button
+2021-07-10 11:48:02,002 - LogFileGeneration -INFO - User Name Entered MNOABCD
+2021-07-10 11:48:02,143 - LogFileGeneration -INFO - User Email ID Entered ppmno1234@gmail.com
+2021-07-10 11:48:02,337 - LogFileGeneration -INFO - User password Entered Summer@12345
+2021-07-10 11:48:02,471 - LogFileGeneration -INFO - User Mobile Number Entered 9731534547
+2021-07-10 11:48:02,720 - LogFileGeneration -INFO - User Experience Years Selected  3
+2021-07-10 11:48:02,988 - LogFileGeneration -INFO - User Experience month Selected  1
+2021-07-10 11:48:03,069 - LogFileGeneration -INFO - User CV uploaded Sucessfully  ./TestData/PRASHANTH_SELENIUM.pdf
+2021-07-10 11:48:03,134 - LogFileGeneration -INFO - Check Box Already Selected
+2021-07-10 11:48:03,325 - LogFileGeneration -INFO - Register bitton clicked in Personal Details Page
+2021-07-10 11:48:03,390 - LogFileGeneration -INFO - Experience Details Tab
+2021-07-10 11:48:04,602 - LogFileGeneration -INFO - User Current Designation is selected: Analyst
+2021-07-10 11:48:04,738 - LogFileGeneration -INFO - User Current Company is selected: Cognizant Technology Solutions
+2021-07-10 11:48:05,041 - LogFileGeneration -INFO - Annual Slary Ruppees Sysbol is selected
+2021-07-10 11:48:06,807 - LogFileGeneration -INFO - Annual Slary in Lakhs selected 2
+2021-07-10 11:48:07,152 - LogFileGeneration -INFO - Annual Slary in Lakhs selected 10
+2021-07-10 11:48:07,428 - LogFileGeneration -INFO - User Work Experience Year selected  2018
+2021-07-10 11:48:07,689 - LogFileGeneration -INFO - User Work Experience month selected  Jan
+2021-07-10 11:48:08,298 - LogFileGeneration -INFO - User Work Experience Till Year selected  Present
+2021-07-10 11:48:39,366 - LogFileGeneration -INFO - User Current State selected  Karnataka
+2021-07-10 11:48:39,720 - LogFileGeneration -INFO - User Current Notice Period selected  2 Months
+2021-07-10 11:48:40,071 - LogFileGeneration -INFO - User Current Skill selected  Java
+2021-07-10 11:48:40,872 - LogFileGeneration -INFO - User Current Industry  selected  IT Services & Consulting
+2021-07-10 11:48:42,922 - LogFileGeneration -INFO - User Current Industry  selected  IT Software - QA & Testing
+2021-07-10 11:48:45,415 - LogFileGeneration -INFO - User Current Industry  selected  QA/QC Exec.
+2021-07-10 11:48:45,601 - LogFileGeneration -INFO - Clicked on Continue Button in Experience Page
+2021-07-10 11:48:45,602 - LogFileGeneration -INFO - Education Details Tab
+2021-07-10 11:48:47,407 - LogFileGeneration -INFO - User Highest Qualification Selected Graduation/Diploma
+2021-07-10 11:48:48,748 - LogFileGeneration -INFO - User Course Selected B.Tech/B.E.
+2021-07-10 11:48:52,262 - LogFileGeneration -INFO - User Specialization Selected Computers
+2021-07-10 11:48:52,448 - LogFileGeneration -INFO - User Collage Selected MNO Collage
+2021-07-10 11:48:52,623 - LogFileGeneration -INFO - User Type of Course Selected
+2021-07-10 11:48:53,409 - LogFileGeneration -INFO - User Year of Passing Selected 2017
+2021-07-10 11:48:53,536 - LogFileGeneration -INFO - Cliked on Continue button in Educaition Page
+2021-07-10 11:48:57,734 - LogFileGeneration -INFO - Clicked on Profile Complete Submit Button
+2021-07-10 11:48:57,818 - LogFileGeneration -INFO - verifyAccountDeleteFunctionality testcase started
+2021-07-10 11:48:58,040 - LogFileGeneration -INFO - User Mouse Over On MyNaukri Link on HomePage
+2021-07-10 11:48:59,532 - LogFileGeneration -INFO - User Clikced on Setting Button on HomePage
+2021-07-10 11:49:02,126 - LogFileGeneration -INFO - User Mouse Over On MyNaukri Link on HomePage
+2021-07-10 11:49:02,731 - LogFileGeneration -INFO - User Clikced on Setting Button on HomePage
+2021-07-10 11:49:02,921 - LogFileGeneration -INFO - User Mouse Over On MyNaukri Link on HomePage
+2021-07-10 11:49:03,136 - LogFileGeneration -INFO - User Clikced on Setting Button on HomePage
+2021-07-10 11:49:05,924 - LogFileGeneration -INFO - User Clikced on ReadMore Buttonon HomePage
+2021-07-10 11:49:07,044 - LogFileGeneration -INFO - User Choosed Delete Account Option 
+2021-07-10 11:49:07,622 - LogFileGeneration -INFO - User Clikced on RDuplicate Account Radio Button
+2021-07-10 11:49:07,731 - LogFileGeneration -INFO - User Clikced on DeleteAccount Button
+2021-07-10 11:49:09,348 - LogFileGeneration -INFO - User Entered Password to delete account
+2021-07-10 11:49:09,457 - LogFileGeneration -INFO - User Clikced on Delete And Logout Button and Account Deleted Sucessfully
+2021-07-10 11:49:13,370 - LogFileGeneration -INFO - verifyAccountDeleteFunctionality testcase Ended
+2021-07-10 11:49:15,626 - LogFileGeneration -INFO - After Test method excecuted
+2021-07-10 11:49:19,736 - LogFileGeneration -INFO - Closing Application
+2021-07-10 11:53:29,529 - LogFileGeneration -INFO - Application Strated
+2021-07-10 11:53:29,551 - LogFileGeneration -INFO - verifyNewUsrerRegistration testcase started
+2021-07-10 11:53:29,567 - LogFileGeneration -INFO - Personal Details Tab
+2021-07-10 11:53:29,709 - LogFileGeneration -INFO - Clicked on Login Link
+2021-07-10 11:53:31,526 - LogFileGeneration -INFO - Clicked on Register Link Button
+2021-07-10 11:53:33,308 - LogFileGeneration -INFO - Clicked on Professinal Option Button
+2021-07-10 11:54:03,516 - LogFileGeneration -ERROR - 
+2021-07-10 11:54:03,516 - LogFileGeneration -ERROR - 
+2021-07-10 11:54:03,516 - LogFileGeneration -ERROR - 
+2021-07-10 11:54:03,516 - LogFileGeneration -ERROR - 
+2021-07-10 11:54:03,516 - LogFileGeneration -ERROR - 
+2021-07-10 11:54:03,516 - LogFileGeneration -ERROR - 
+2021-07-10 11:54:03,516 - LogFileGeneration -ERROR - 
+2021-07-10 11:54:03,516 - LogFileGeneration -ERROR - 
+2021-07-10 11:54:03,937 - LogFileGeneration -INFO - After Test method excecuted
+2021-07-10 11:54:04,645 - LogFileGeneration -INFO - Closing Application
+2021-07-10 11:55:33,921 - LogFileGeneration -INFO - Application Strated
+2021-07-10 11:55:33,952 - LogFileGeneration -INFO - verifyNewUsrerRegistration testcase started
+2021-07-10 11:55:33,963 - LogFileGeneration -INFO - Personal Details Tab
+2021-07-10 11:55:34,075 - LogFileGeneration -INFO - Clicked on Login Link
+2021-07-10 11:55:35,475 - LogFileGeneration -INFO - Clicked on Register Link Button
+2021-07-10 11:55:37,157 - LogFileGeneration -INFO - Clicked on Professinal Option Button
+2021-07-10 11:56:07,223 - LogFileGeneration -ERROR - no such element: Unable to locate element: {"method":"css selector","selector":"#fnam"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'LAPTOP-MOTMPJ0P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=C:\Users\prash\AppData\Local\Temp\scoped_dir25296_325671442}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60856}, acceptInsecureCerts=false, browserVersion=91.0.4472.124, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 69584200b473a4aa5aebad1f083e0411
+*** Element info: {Using=id, value=fnam}
+2021-07-10 11:56:07,233 - LogFileGeneration -ERROR - 
+2021-07-10 11:56:07,233 - LogFileGeneration -ERROR - 
+2021-07-10 11:56:07,233 - LogFileGeneration -ERROR - 
+2021-07-10 11:56:07,233 - LogFileGeneration -ERROR - 
+2021-07-10 11:56:07,233 - LogFileGeneration -ERROR - 
+2021-07-10 11:56:07,233 - LogFileGeneration -ERROR - 
+2021-07-10 11:56:07,233 - LogFileGeneration -ERROR - 
+2021-07-10 11:56:07,233 - LogFileGeneration -ERROR - 
+2021-07-10 11:56:07,640 - LogFileGeneration -INFO - After Test method excecuted
+2021-07-10 11:56:08,406 - LogFileGeneration -INFO - Closing Application
