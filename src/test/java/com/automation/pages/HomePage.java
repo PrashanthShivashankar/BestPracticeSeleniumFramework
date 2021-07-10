@@ -169,7 +169,7 @@ public class HomePage {
 	}
 
 	public void clickReadMoreLink() {
-
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		try {
 
 			if (skipAndContinueButton.isDisplayed()) {
