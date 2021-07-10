@@ -23,13 +23,10 @@ public class BrowserFactory {
 			driver = new ChromeDriver(ops);
 
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
-			//System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 
 		} else if (browserName.equalsIgnoreCase("IE")) {
-
-			//System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 
@@ -40,8 +37,8 @@ public class BrowserFactory {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(appURL);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Helper.closeMultipleChildWindow(driver);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);		
 		return driver;
 	}
 

@@ -150,6 +150,7 @@ public class HomePage {
 	}
 
 	public void clickOnMyNaukri() {
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		try {
 			Helper.mouseOverOnElement(driver, myNaukrilink);
 			logger4j.info("User Mouse Over On MyNaukri Link on HomePage");

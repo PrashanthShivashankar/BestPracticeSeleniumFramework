@@ -2,6 +2,7 @@ package com.automation.pages;
 
 import java.io.File;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -134,6 +135,7 @@ public class LoginPage {
 	}
 
 	public void enterUserName(String name) {
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		fname.sendKeys(name);
 		logger4j.info("User Name Entered " + name);
 	}
@@ -243,6 +245,7 @@ public class LoginPage {
 	}
 
 	public void chooseCurrentDesignation(String desig) {
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		try {
 			Helper.passValueToElementUsingJS(driver, currentDesignation, desig);
 			logger4j.info("User Current Designation is selected: " + desig);
@@ -434,6 +437,7 @@ public class LoginPage {
 	}
 
 	public void chooseHigestQualification(String qualification) {
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		try {
 			higestQualificationButton.click();
 			Helper.selectTheElementFromDropDownList2(driver, higestQualificationList, qualification);
